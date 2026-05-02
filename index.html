@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Safak Pakistan — A New Dawn for Youth Leadership</title>
+<meta name="description" content="Safak Pakistan is a youth-led think tank where Pakistani youth think, speak, learn, and lead.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────────────────── -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" onclick="showPage('home')">
+      <img src="images/image-1.svg" alt="Safak Pakistan" class="nav-logo-img">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" onclick="showPage('about')">About</a></li>
+      <li class="nav-dropdown">
+        <a href="#" class="nav-dropdown-trigger" onclick="return false;">Explore
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="#" onclick="showPage('people');closeDropdowns()">Our People</a></li>
+          <li><a href="#" onclick="showPage('events');closeDropdowns()">Events &amp; Forum</a></li>
+          <li><a href="#" onclick="showPage('contact');closeDropdowns()">Contact</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="#" class="nav-dropdown-trigger" onclick="return false;">Get Involved
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="#" onclick="showPage('voice');closeDropdowns()">Publish Your Voice</a></li>
+          <li><a href="#" onclick="showPage('academy');closeDropdowns()">Safak Academy</a></li>
+          <li><a href="#" onclick="showPage('join');closeDropdowns()">How to Participate</a></li>
+        </ul>
+      </li>
+      <li><a href="#" onclick="showPage('careers')" style="color:var(--accent);font-weight:600">We're Hiring</a></li>
+      <li><a href="#" class="nav-cta" onclick="openModal('modal-join');return false;">Join Safak</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── MOBILE MENU ──────────────────────────────────────────── -->
+<div class="nav-mobile" id="navMobile">
+  <ul>
+    <li><a href="#" onclick="showPage('about');closeMobile()">About Safak</a></li>
+    <li><a href="#" onclick="showPage('people');closeMobile()">Our People</a></li>
+    <li><a href="#" onclick="showPage('voice');closeMobile()">Publish Your Voice</a></li>
+    <li><a href="#" onclick="showPage('academy');closeMobile()">Safak Academy</a></li>
+    <li><a href="#" onclick="showPage('events');closeMobile()">Events &amp; Forum</a></li>
+    <li><a href="#" onclick="showPage('join');closeMobile()">How to Participate</a></li>
+    <li><a href="#" onclick="showPage('contact');closeMobile()">Contact</a></li>
+    <li><a href="#" onclick="showPage('careers');closeMobile()" style="color:var(--accent);font-weight:600">We're Hiring →</a></li>
+  </ul>
+  <a href="#" class="mobile-cta" onclick="openModal('modal-join');closeMobile();return false;">Join Safak →</a>
+</div>
+
+<div class="page-body">
+
+<!-- ============================================================
+     HOME PAGE
+============================================================ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner container">
+      <div class="hero-content">
+        <p class="eyebrow">Est. 2026 — Youth-Led Think Tank</p>
+        <h1>Where Pakistani<br>Youth <em>Think,<br>Speak, and Lead.</em></h1>
+        <p>Safak is a civic platform built for Pakistan's next generation — a space to develop ideas, publish independent voices, build real skills, and shape the country's future with responsibility and discipline.</p>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-accent btn-lg" onclick="openModal('modal-join');return false;">Join Safak</a>
+          <a href="#" class="btn btn-lg" style="border:1.5px solid rgba(255,255,255,.35);color:#fff;background:transparent" onclick="openModal('modal-voice');return false;">Submit Your Voice</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-stat">
+            <div class="hero-stat-n">4<span> Pillars</span></div>
+            <div class="hero-stat-l">Voice · Academy · Forum · Network</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-n">Open<span> Submissions</span></div>
+            <div class="hero-stat-l">Essays, Policy Takes, Video Opinions</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-n">Cohort<span>-Based</span></div>
+            <div class="hero-stat-l">Learning &amp; Professional Development</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-n">Youth<span>-Led</span></div>
+            <div class="hero-stat-l">Independent, Non-Partisan, Principled</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll"><div class="scroll-dot"></div>Scroll</div>
+  </section>
+
+  <!-- WHAT IS SAFAK -->
+  <section class="rule-top" style="background:var(--white)">
+    <div class="container">
+      <div class="what-inner">
+        <div class="what-label fade-in">
+          <p class="eyebrow">What is Safak</p>
+          <h2>A new<br><em>dawn</em> for<br>civic youth.</h2>
+        </div>
+        <div class="what-body fade-in">
+          <p>Safak Pakistan is a <strong>youth-led think tank and civic platform</strong> created to give Pakistan's emerging generation a serious space for intellectual and civic development. We are not a political party, not a social media trend, and not a short-term campaign.</p>
+          <p>We exist because the country needs young people who can think critically, write and speak with precision and fairness, understand how institutions work, and contribute to national improvement with maturity and discipline.</p>
+          <div class="pull-quote"><p>"Safak" is a Turkish word meaning <em>New Dawn</em> — describing exactly what becomes possible when young people engage seriously with the world around them.</p></div>
+          <p>We offer pathways for youth to publish their perspectives, develop civic competence through structured learning, participate in serious public dialogue, and grow into responsible leaders.</p>
+          <a href="#" class="arrow-link" onclick="showPage('about')">Learn more about our mission <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUR PHASES ROADMAP -->
+  <section class="phases-section rule-top">
+    <div class="container">
+      <div class="phases-header fade-in">
+        <p class="eyebrow">The Journey</p>
+        <h2>Four Phases.<br>One <em>Destination.</em></h2>
+        <p>Safak is being built in deliberate phases — each one unlocking the next. We start with Voice. We end with a generation that leads.</p>
+      </div>
+      <div class="phases-track">
+        <div class="phase-item phase-item--active fade-in">
+          <div class="phase-marker">
+            <div class="phase-dot phase-dot--active"><span class="phase-pulse"></span></div>
+            <div class="phase-line"></div>
+          </div>
+          <div class="phase-content">
+            <div class="phase-label phase-label--active">Phase 01 · Now</div>
+            <h3 class="phase-name">Safak Voice</h3>
+            <p class="phase-desc">Pakistan's open publishing platform for youth. Write. Speak. Share. Your ideas — reviewed for quality, published to the nation.</p>
+            <div class="phase-status phase-status--live"><span class="phase-live-dot"></span>Active · Submissions Open</div>
+          </div>
+        </div>
+        <div class="phase-item fade-in fade-in-delay-1">
+          <div class="phase-marker">
+            <div class="phase-dot">02</div>
+            <div class="phase-line"></div>
+          </div>
+          <div class="phase-content">
+            <div class="phase-label">Phase 02 · Next</div>
+            <h3 class="phase-name">Safak Forum</h3>
+            <p class="phase-desc">Structured public dialogue. Panel discussions, debates, and roundtables on governance and policy — bringing serious conversations to serious settings.</p>
+            <div class="phase-status">Coming Next</div>
+          </div>
+        </div>
+        <div class="phase-item fade-in fade-in-delay-2">
+          <div class="phase-marker">
+            <div class="phase-dot">03</div>
+            <div class="phase-line"></div>
+          </div>
+          <div class="phase-content">
+            <div class="phase-label">Phase 03 · Future</div>
+            <h3 class="phase-name">Safak Academy</h3>
+            <p class="phase-desc">Cohort-based development. Structured tracks in civic writing, policy analysis, public speaking, and leadership — building real skills, not certificates.</p>
+            <div class="phase-status">In Development</div>
+          </div>
+        </div>
+        <div class="phase-item phase-item--last fade-in fade-in-delay-3">
+          <div class="phase-marker">
+            <div class="phase-dot phase-dot--vision">04</div>
+          </div>
+          <div class="phase-content">
+            <div class="phase-label">Phase 04 · Vision</div>
+            <h3 class="phase-name">Safak Network</h3>
+            <p class="phase-desc">A permanent civic infrastructure — alumni, ambassadors, institutional partners, and contributors connected across Pakistan, carrying the mission forward indefinitely.</p>
+            <div class="phase-status">The Vision</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHASE ONE DEEP-DIVE — SAFAK VOICE -->
+  <section class="voice-section">
+    <div class="container">
+      <div class="voice-header fade-in">
+        <div class="voice-phase-tag"><span class="vpt-live"></span>Phase One — Live Now</div>
+        <h2>What is <em>Safak Voice?</em></h2>
+        <p class="voice-sub">Pakistan's open content platform for youth expression. We invite young people from across the country — from universities, cities, and every walk of life — to record and share their voices in the format that feels most natural to them.</p>
+        <p class="voice-sub">There are no restrictions on topic, perspective, or background. If you are young, thoughtful, and care about Pakistan's future — you belong on Safak Voice. Our internal team handles the rest: editing, directing, publishing, and amplifying your message to the widest possible audience.</p>
+      </div>
+      <div class="voice-principles fade-in">
+        <div class="vp-card">
+          <div class="vp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg></div>
+          <h4>Open to All</h4>
+          <p>Anyone with something meaningful to say is welcome. No gatekeeping. No filters on thought. If you are a young Pakistani, your voice has a place here.</p>
+        </div>
+        <div class="vp-card">
+          <div class="vp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+          <h4>Professionally Operated</h4>
+          <p>While contributions come from the youth, the platform runs with professional discipline. Every piece of content is managed, edited, and presented with care and quality.</p>
+        </div>
+        <div class="vp-card">
+          <div class="vp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <h4>Nation-First Purpose</h4>
+          <p>Every article, video, and audio post serves a single purpose: awakening the nation by building the mindset, curiosity, and commitment of Pakistan's next generation.</p>
+        </div>
+      </div>
+      <div class="voice-formats-header fade-in"><p class="eyebrow">Three Ways to Contribute</p></div>
+      <div class="voice-formats fade-in">
+        <div class="vf-card vf-card--primary">
+          <div class="vf-num">01</div>
+          <div class="vf-icon-wrap"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+          <h3>Written Articles</h3>
+          <p>Essays, opinion pieces, stories, analyses — any written form. Contributors submit their raw writing and our editorial team refines it into polished, publishable content while preserving the original voice and message.</p>
+        </div>
+        <div class="vf-card vf-card--secondary">
+          <div class="vf-num">02</div>
+          <div class="vf-icon-wrap"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+          <h3>Video Messages</h3>
+          <p>Spoken directly to camera — personal, raw, and real. Video contributors share their thoughts visually. Our team handles professional editing, graphics, and packaging for maximum reach on social platforms.</p>
+        </div>
+        <div class="vf-card vf-card--tertiary">
+          <div class="vf-num">03</div>
+          <div class="vf-icon-wrap"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></div>
+          <h3>Audio Messages</h3>
+          <p>Podcast-style recordings, voice notes, or spoken reflections. Audio contributions are cleaned, edited, and published as standalone audio pieces or featured within broader Safak productions.</p>
+        </div>
+      </div>
+      <div class="voice-journey fade-in">
+        <div class="vj-header">
+          <p class="eyebrow">How It Works</p>
+          <h3>Content <em>Journey</em></h3>
+          <p>From a raw idea in a young person's mind to a polished, published voice on the platform.</p>
+        </div>
+        <div class="vj-steps">
+          <div class="vj-step">
+            <div class="vj-step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+            <div class="vj-connector"></div>
+            <div class="vj-step-label">Contributor<br>Submits</div>
+            <p class="vj-step-desc">Youth from any background submits written, video, or audio content</p>
+          </div>
+          <div class="vj-step">
+            <div class="vj-step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="vj-connector"></div>
+            <div class="vj-step-label">Editorial<br>Review</div>
+            <p class="vj-step-desc">Our team reviews for quality, accuracy, clarity, and alignment with standards</p>
+          </div>
+          <div class="vj-step">
+            <div class="vj-step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
+            <div class="vj-connector"></div>
+            <div class="vj-step-label">Refine &amp;<br>Edit</div>
+            <p class="vj-step-desc">Editing, formatting, and production — while preserving the contributor's voice</p>
+          </div>
+          <div class="vj-step">
+            <div class="vj-step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <div class="vj-connector"></div>
+            <div class="vj-step-label">Approve &amp;<br>Publish</div>
+            <p class="vj-step-desc">Content goes live on Safak Voice — a credible platform for the nation</p>
+          </div>
+          <div class="vj-step">
+            <div class="vj-step-icon vj-step-icon--final"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0016 2a4.48 4.48 0 00-4.48 4.48v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></div>
+            <div class="vj-step-label">Amplify &amp;<br>Reach</div>
+            <p class="vj-step-desc">Distributed across social platforms to reach the widest possible youth audience</p>
+          </div>
+        </div>
+      </div>
+      <div class="voice-cta fade-in">
+        <div class="voice-cta-inner">
+          <div>
+            <p class="eyebrow" style="color:rgba(255,255,255,.6)">Ready to Contribute?</p>
+            <h3>Your voice belongs<br>on Safak.</h3>
+          </div>
+          <div class="voice-cta-btns">
+            <a href="#" class="btn btn-white" onclick="openModal('modal-voice');return false;">Submit Your Piece</a>
+            <a href="#" class="btn btn-outline-white" onclick="showPage('voice')">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY SAFAK EXISTS -->
+  <section class="rule-top" style="background:var(--white)">
+    <div class="container">
+      <div class="why-grid">
+        <div class="fade-in">
+          <p class="eyebrow">Our Purpose</p>
+          <h2 style="margin-bottom:24px">Why Safak exists.</h2>
+          <p style="margin-bottom:20px">Pakistan needs more than protest and passion. It needs a generation that understands how things work, can argue with evidence, and is willing to do the difficult, disciplined work of civic improvement over the long term.</p>
+          <p style="margin-bottom:20px">Safak exists to build exactly that kind of youth — not followers, not spectators, but serious, capable, well-informed citizens ready to contribute in every domain of public life.</p>
+          <a href="#" class="btn btn-outline" onclick="showPage('about')">Our Mission &amp; Values</a>
+        </div>
+        <div class="why-list fade-in fade-in-delay-1">
+          <div class="why-item"><div class="why-num">01</div><div><h4>Independent Thinking</h4><p>To cultivate the habit of thinking clearly and independently — based on evidence, reasoning, and principle, not tribe or emotion.</p></div></div>
+          <div class="why-item"><div class="why-num">02</div><div><h4>Civic Competence</h4><p>To build real understanding of policy, governance, institutions, and public affairs — the knowledge citizens need to participate meaningfully.</p></div></div>
+          <div class="why-item"><div class="why-num">03</div><div><h4>Responsible Voice</h4><p>To promote the values of truth, fairness, and intellectual honesty — and to model what responsible public discourse looks like.</p></div></div>
+          <div class="why-item"><div class="why-num">04</div><div><h4>Long-Term Contribution</h4><p>To prepare youth for sustained, practical contributions to national improvement — across civil society, institutions, policy, and culture.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section rule-top">
+    <div class="container">
+      <div class="section-header fade-in" style="margin-bottom:80px">
+        <p class="eyebrow" style="color:rgba(255,255,255,.45)">The Journey</p>
+        <h2 style="color:#fff">How Safak works.</h2>
+        <p style="color:rgba(250,250,248,.55)">A clear path from first encounter to active leadership.</p>
+      </div>
+      <div class="journey">
+        <div class="journey-step fade-in"><div class="step-dot">D</div><h4>Discover</h4><p>Find Safak. Explore our content, mission, and community.</p></div>
+        <div class="journey-step fade-in fade-in-delay-1"><div class="step-dot">S</div><h4>Submit</h4><p>Write an essay. Record an opinion. Share your perspective.</p></div>
+        <div class="journey-step fade-in fade-in-delay-2"><div class="step-dot">R</div><h4>Review</h4><p>Our editorial team reviews for quality, accuracy, and fairness.</p></div>
+        <div class="journey-step fade-in fade-in-delay-2"><div class="step-dot">P</div><h4>Publish</h4><p>Your work goes live. Your voice joins a credible platform.</p></div>
+        <div class="journey-step fade-in fade-in-delay-3"><div class="step-dot">L</div><h4>Learn</h4><p>Join a cohort. Develop real skills through structured tracks.</p></div>
+        <div class="journey-step fade-in fade-in-delay-3"><div class="step-dot">Pa</div><h4>Participate</h4><p>Attend forums. Engage in serious public dialogue.</p></div>
+        <div class="journey-step fade-in fade-in-delay-4"><div class="step-dot" style="background:var(--accent);border-color:var(--accent)">Le</div><h4>Lead</h4><p>Become an ambassador, mentor, or partner in the network.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPPORTUNITIES -->
+  <section class="rule-top" style="background:var(--off-white)">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="eyebrow">Get Involved</p>
+        <h2>Where do you start?</h2>
+        <p>Multiple pathways. One community. Choose how you want to contribute.</p>
+      </div>
+      <div class="opps-grid">
+        <div class="opp-card fade-in" data-num="01"><div class="opp-tag">Safak Voice</div><h3>Submit an Article or Essay</h3><p>Have a perspective on policy, governance, or world events? Write it clearly, argue it fairly, and submit it to Safak Voice for review and publication.</p><a href="#" class="opp-link" onclick="showPage('voice')">Start writing →</a></div>
+        <div class="opp-card fade-in fade-in-delay-1" data-num="02"><div class="opp-tag">Safak Voice</div><h3>Record a Video Opinion</h3><p>Prefer speaking to writing? Record a short, well-reasoned video opinion on a topic that matters. Submit it for review and publication on our platform.</p><a href="#" class="opp-link" onclick="showPage('voice')">Learn how →</a></div>
+        <div class="opp-card fade-in" data-num="03"><div class="opp-tag">Safak Academy</div><h3>Join a Development Cohort</h3><p>Apply to our structured Academy cohorts. Develop civic writing, research, policy analysis, public speaking, or leadership skills.</p><a href="#" class="opp-link" onclick="openModal('modal-academy');return false;">Apply now →</a></div>
+        <div class="opp-card fade-in fade-in-delay-1" data-num="04"><div class="opp-tag">Safak Forum</div><h3>Attend a Safak Event</h3><p>Join our panel discussions, roundtables, and public forums on Pakistan's most pressing policy and governance questions.</p><a href="#" class="opp-link" onclick="showPage('events')">See events →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CONTENT -->
+  <section class="rule-top" style="background:var(--white)">
+    <div class="container">
+      <div class="section-header fade-in" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px">
+        <div><p class="eyebrow">From Safak Voice</p><h2>Featured content.</h2></div>
+        <a href="#" class="arrow-link" onclick="showPage('voice')">View all <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="content-grid">
+        <div class="content-card featured fade-in"><div class="content-type">Essay — Policy Analysis</div><h3>Pakistan's Urban Governance Crisis: Why Cities Need More Than Infrastructure</h3><p>A close look at how Pakistan's rapidly urbanizing cities are outpacing their governance structures, and what a youth-engaged civic response might look like in the decade ahead.</p><div class="content-meta"><span class="content-author">Aiza Rehman</span><span class="content-date">March 2026</span></div></div>
+        <div class="content-card fade-in fade-in-delay-1"><div class="content-type">Video Opinion</div><h3>Three things Pakistan's curriculum gets wrong about civic education</h3><p>A short, direct take on what's missing from how we teach young Pakistanis about how the country works.</p><div class="content-meta"><span class="content-author">Hassan Tariq</span><span class="content-date">February 2026</span></div></div>
+        <div class="content-card fade-in fade-in-delay-2"><div class="content-type">Explainer</div><h3>How Pakistan's federal budget process works — and why youth should care</h3><p>A clear breakdown of budget formulation, parliamentary review, and what it means for public services.</p><div class="content-meta"><span class="content-author">Safak Editorial</span><span class="content-date">January 2026</span></div></div>
+      </div>
+      <div style="display:flex;justify-content:center"><a href="#" class="btn btn-outline" onclick="showPage('voice')">Read More on Safak Voice</a></div>
+    </div>
+  </section>
+
+  <section class="join-section">
+    <div class="container"><div class="join-inner fade-in"><p class="eyebrow">Join Safak Pakistan</p><h2>The next dawn<br>begins with you.</h2><p>Whether you want to write, speak, learn, or lead — there is a place for you in the Safak community.</p><div class="join-btns"><a href="#" class="btn btn-white btn-lg" onclick="openModal('modal-join');return false;">Get Involved</a><a href="#" class="btn btn-outline-white btn-lg" onclick="showPage('people')">Meet Our People</a></div></div></div>
+  </section>
+
+</div><!-- /home -->
+
+<!-- ============================================================
+     OUR PEOPLE PAGE
+============================================================ -->
+<div class="page" id="page-people">
+  <div class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Our People</p>
+      <h1>Built by Real People.<br>Driven by Purpose.</h1>
+      <p>Safak is built by people who believe that youth can think clearly, lead responsibly, and shape the future with purpose. This is the community behind the mission.</p>
+    </div>
+  </div>
+
+  <section class="people-section rule-top">
+    <div class="container">
+      <div class="people-tabs fade-in">
+        <button class="ptab active" onclick="switchTab('founders',this)">Founders</button>
+        <button class="ptab" onclick="switchTab('contributors',this)">Contributors</button>
+        <button class="ptab" onclick="switchTab('volunteers',this)">Volunteers</button>
+        <button class="ptab" onclick="switchTab('ambassadors',this)">Campus Ambassadors</button>
+        <button class="ptab" onclick="switchTab('alumni',this)">Academy Alumni</button>
+        <button class="ptab" onclick="switchTab('partners',this)">Partners</button>
+      </div>
+
+      <!-- FOUNDERS PANEL -->
+      <div class="people-panel active" id="panel-founders">
+        <div class="founders-spotlight">
+          <div class="founder-spotlight-card fade-in">
+            <div class="fs-photo">
+              <img src="images/image-2.jpg" alt="Muhammad Zain Sardar — Co-Founder, Safak Pakistan" loading="lazy">
+              <div class="fs-badge">Co-Founder</div>
+            </div>
+            <div class="fs-info">
+              <div class="fs-role">Co-Founder &amp; Visionary Leader</div>
+              <h3>Muhammad Zain Sardar</h3>
+              <div class="fs-quote">"The first step toward a better Pakistan is a generation that knows how to think — not just what to think. Safak is that first step."</div>
+              <p class="fs-desc">Muhammad Zain Sardar is a strategic thinker and civic builder whose conviction in Pakistan's youth drove the founding of Safak in 2026. He believes that the country's most urgent need is not another voice — but a platform that holds voices to a higher standard. His vision for Safak is one of long-term institutional impact: building the habits, skills, and civic culture that Pakistan's next generation of leaders will carry forward for decades.</p>
+            </div>
+          </div>
+          <div class="founder-spotlight-card fade-in fade-in-delay-1">
+            <div class="fs-photo">
+              <img src="images/image-3.jpg" alt="Muhammad Naeem Aziz — Co-Founder, Safak Pakistan" loading="lazy">
+              <div class="fs-badge">Co-Founder</div>
+            </div>
+            <div class="fs-info">
+              <div class="fs-role">Co-Founder &amp; Intellectual Architect</div>
+              <h3>Muhammad Naeem Aziz</h3>
+              <div class="fs-quote">"Real change begins with discipline, not urgency. We are building the infrastructure for a generation that leads responsibly — and that work starts now."</div>
+              <p class="fs-desc">Muhammad Naeem Aziz brings intellectual depth and principled commitment to everything Safak does. A motivated thinker and builder, he has shaped Safak's philosophical foundation — its emphasis on truth, fairness, independence, and long-term civic contribution. He believes that the greatest service Safak can offer is not inspiration, but formation: the serious, sustained development of young people who are genuinely ready to serve the country.</p>
+            </div>
+          </div>
+        </div>
+        <div class="founders-note fade-in">
+          <div class="founders-note-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" zoomAndPan="magnify" viewBox="410 405 680 680" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="bd35e1b08d"><path d="M 439.351562 432.597656 L 1060.351562 432.597656 L 1060.351562 1067.097656 L 439.351562 1067.097656 Z M 439.351562 432.597656 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#bd35e1b08d)"><path fill="#2A9268" d="M 1049.898438 715.046875 L 945.292969 855.535156 C 943.683594 857.699219 943.898438 860.664062 945.808594 862.566406 C 947.710938 864.472656 950.675781 864.6875 952.839844 863.078125 L 1058.472656 784.417969 C 1059.886719 783.367188 1060.648438 781.855469 1060.648438 780.097656 L 1060.648438 743.511719 C 1060.648438 734.863281 1060.296875 726.296875 1059.601562 717.824219 C 1059.414062 715.539062 1057.914062 713.707031 1055.714844 713.078125 C 1053.511719 712.449219 1051.269531 713.210938 1049.90625 715.042969 Z M 749.996094 870.082031 C 647.863281 870.082031 564.71875 951.402344 561.785156 1052.820312 C 561.738281 1054.332031 562.253906 1055.648438 563.308594 1056.734375 C 564.363281 1057.820312 565.664062 1058.371094 567.175781 1058.371094 L 932.816406 1058.371094 C 934.328125 1058.371094 935.632812 1057.820312 936.683594 1056.734375 C 937.738281 1055.648438 938.25 1054.332031 938.207031 1052.820312 C 935.273438 951.402344 852.132812 870.082031 750 870.082031 Z M 750 432.867188 C 733.066406 432.867188 716.453125 434.222656 700.257812 436.824219 C 697.351562 437.296875 695.355469 440.015625 695.78125 442.925781 L 744.664062 776.847656 C 745.058594 779.511719 747.304688 781.457031 750 781.457031 C 752.691406 781.457031 754.941406 779.511719 755.332031 776.847656 L 804.210938 442.929688 C 804.636719 440.019531 802.640625 437.300781 799.734375 436.832031 C 783.546875 434.222656 766.925781 432.871094 749.996094 432.871094 Z M 636.777344 454.148438 C 606.355469 466.0625 578.277344 482.644531 553.410156 503.003906 C 551.519531 504.550781 550.90625 507.0625 551.871094 509.304688 L 671.980469 787.820312 C 673.046875 790.296875 675.726562 791.59375 678.332031 790.894531 C 680.933594 790.195312 682.597656 787.734375 682.289062 785.0625 L 644.097656 458.542969 C 643.898438 456.824219 642.996094 455.441406 641.515625 454.546875 C 640.03125 453.65625 638.386719 453.523438 636.773438 454.152344 Z M 503.023438 555.089844 C 504.230469 553.507812 506.0625 552.753906 508.039062 553.023438 C 510.019531 553.292969 511.578125 554.523438 512.3125 556.375 L 613.855469 811.90625 C 614.847656 814.410156 613.875 817.214844 611.539062 818.5625 C 609.210938 819.910156 606.289062 819.351562 604.617188 817.234375 L 461.308594 635.953125 C 460.085938 634.40625 459.800781 632.480469 460.515625 630.648438 C 471.15625 603.382812 485.53125 577.976562 503.023438 555.085938 Z M 440.398438 717.828125 C 440.582031 715.542969 442.085938 713.710938 444.28125 713.085938 C 446.484375 712.453125 448.726562 713.214844 450.089844 715.046875 L 554.699219 855.535156 C 556.3125 857.699219 556.089844 860.664062 554.1875 862.566406 C 552.28125 864.472656 549.316406 864.6875 547.15625 863.082031 L 443.1875 785.660156 C 441.773438 784.609375 441.015625 783.097656 441.015625 781.335938 L 441.015625 776.074219 C 441.015625 775.882812 441.007812 775.714844 440.988281 775.523438 C 439.910156 765 439.351562 754.324219 439.351562 743.515625 C 439.351562 734.867188 439.707031 726.300781 440.398438 717.828125 Z M 441.011719 870.492188 L 441.011719 893.734375 C 441.011719 895.988281 442.316406 897.910156 444.410156 898.746094 L 503.519531 922.238281 C 506.023438 923.234375 508.824219 922.257812 510.175781 919.925781 C 511.523438 917.59375 510.96875 914.664062 508.851562 912.996094 L 449.738281 866.261719 C 448.078125 864.949219 445.953125 864.714844 444.046875 865.640625 C 442.140625 866.5625 441.007812 868.375 441.007812 870.492188 Z M 1060.636719 893.070312 C 1060.636719 895.324219 1059.335938 897.246094 1057.242188 898.082031 L 996.460938 922.230469 C 993.957031 923.230469 991.148438 922.253906 989.804688 919.921875 C 988.457031 917.589844 989.015625 914.664062 991.128906 912.996094 L 1051.902344 864.949219 C 1053.5625 863.636719 1055.6875 863.402344 1057.597656 864.328125 C 1059.5 865.246094 1060.636719 867.0625 1060.636719 869.179688 Z M 946.582031 502.996094 C 948.472656 504.546875 949.089844 507.058594 948.121094 509.300781 L 828.011719 787.816406 C 826.945312 790.292969 824.265625 791.589844 821.664062 790.890625 C 819.058594 790.191406 817.394531 787.730469 817.707031 785.058594 L 855.894531 458.542969 C 856.09375 456.828125 856.996094 455.441406 858.476562 454.546875 C 859.960938 453.65625 861.609375 453.523438 863.21875 454.152344 C 893.640625 466.0625 921.71875 482.652344 946.589844 503.007812 Z " fill-opacity="1" fill-rule="evenodd"/></g></svg>
+          </div>
+          <div class="founders-note-text">
+            <p>Together, Zain and Naeem founded Safak Pakistan in 2026 with one shared conviction: that Pakistan's youth do not lack potential — they lack a serious platform to develop it. Everything Safak builds is an answer to that gap.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTRIBUTORS PANEL -->
+      <div class="people-panel" id="panel-contributors">
+        <div class="people-grid">
+          <div class="person-card fade-in">
+            <div class="pc-avatar" style="background:var(--charcoal);overflow:hidden"><img src="images/image-4.jpg" alt="Naeem Zafar" style="width:100%;height:100%;object-fit:cover;object-position:center top"></div>
+            <div class="pc-role">Social Media Lead</div>
+            <div class="pc-name">Naeem Zafar</div>
+            <div class="pc-affil">Digital Presence &amp; Outreach</div>
+            <p class="pc-desc">One of Safak's founding members. Naeem has led our social media presence from day one — building our voice, growing our audience, and making sure Safak's mission reaches the youth it is built for.</p>
+          </div>
+          <div class="person-card fade-in fade-in-delay-1">
+            <div class="pc-avatar" style="background:var(--charcoal);overflow:hidden"><img src="images/image-5.jpg" alt="Muhammad Waseem" style="width:100%;height:100%;object-fit:cover;object-position:center top"></div>
+            <div class="pc-role">Writer &amp; Editorial Member</div>
+            <div class="pc-name">Muhammad Waseem</div>
+            <div class="pc-affil">Civic Writing &amp; Content</div>
+            <p class="pc-desc">A founding member and one of Safak's earliest and most committed writers. Muhammad Waseem has been contributing thoughtful, grounded content since Safak's earliest days — and continues to do so.</p>
+          </div>
+          <div class="person-card fade-in fade-in-delay-2">
+            <div class="pc-avatar"><span class="pc-avatar-initials">AR</span></div>
+            <div class="pc-role">Contributing Writer</div>
+            <div class="pc-name">Aiza Rehman</div>
+            <div class="pc-affil">Urban Policy &amp; Governance</div>
+            <p class="pc-desc">Writes on urban governance, housing policy, and municipal institutions. Published three long-form essays on Safak Voice in 2026.</p>
+          </div>
+          <div class="person-card fade-in">
+            <div class="pc-avatar"><span class="pc-avatar-initials">HT</span></div>
+            <div class="pc-role">Video Contributor</div>
+            <div class="pc-name">Hassan Tariq</div>
+            <div class="pc-affil">Education &amp; Civic Systems</div>
+            <p class="pc-desc">Creates concise video opinions on education reform and civic literacy. One of Safak Voice's earliest video contributors.</p>
+          </div>
+          <div class="person-card fade-in fade-in-delay-1">
+            <div class="pc-avatar"><span class="pc-avatar-initials">FK</span></div>
+            <div class="pc-role">Policy Analyst</div>
+            <div class="pc-name">Fatima Khan</div>
+            <div class="pc-affil">Energy &amp; Climate Policy</div>
+            <p class="pc-desc">Focuses on energy policy and climate governance. Her policy takes on the energy crisis have been widely shared within the Safak community.</p>
+          </div>
+          <div class="person-card fade-in fade-in-delay-2">
+            <div class="pc-avatar"><span class="pc-avatar-initials">UA</span></div>
+            <div class="pc-role">Explainer Writer</div>
+            <div class="pc-name">Usman Aslam</div>
+            <div class="pc-affil">Public Finance &amp; Budget</div>
+            <p class="pc-desc">Specialises in making Pakistan's fiscal and budgetary systems accessible to young audiences. Author of our budget explainer series.</p>
+          </div>
+          <div class="person-card fade-in">
+            <div class="pc-avatar"><span class="pc-avatar-initials">SN</span></div>
+            <div class="pc-role">Contributing Writer</div>
+            <div class="pc-name">Sara Niazi</div>
+            <div class="pc-affil">Women, Governance &amp; Rights</div>
+            <p class="pc-desc">Writes on women's participation in public institutions and the gender dimensions of civic policy in Pakistan.</p>
+          </div>
+          <div class="person-card fade-in fade-in-delay-1">
+            <div class="pc-avatar" style="background:var(--charcoal)"><span class="pc-avatar-initials" style="color:var(--accent-light)">+</span></div>
+            <div class="pc-role">Open</div>
+            <div class="pc-name">Could Be You</div>
+            <div class="pc-affil">Any Policy or Civic Topic</div>
+            <p class="pc-desc">Safak Voice is open for submissions. If you write clearly, argue fairly, and care about Pakistan's public affairs — your voice belongs here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- VOLUNTEERS PANEL -->
+      <div class="people-panel" id="panel-volunteers">
+        <div class="people-grid">
+          <div class="person-card fade-in">
+            <div class="pc-avatar"><span class="pc-avatar-initials">AQ</span></div>
+            <div class="pc-role">Editorial Volunteer</div>
+            <div class="pc-name">Ali Qureshi</div>
+            <div class="pc-affil">Copy Editing &amp; Fact-Checking</div>
+            <p class="pc-desc">Assists the editorial team in reviewing submissions for factual accuracy and structural clarity before publication.</p>
+          </div>
+          <div class="person-card fade-in fade-in-delay-1">
+            <div class="pc-avatar"><span class="pc-avatar-initials">MR</span></div>
+            <div class="pc-role">Digital Volunteer</div>
+            <div class="pc-name">Maryam Rafiq</div>
+            <div class="pc-affil">Social Media &amp; Content</div>
+            <p class="pc-desc">Manages Safak's digital presence and helps distribute published content across our social platforms to reach a wider youth audience.</p>
+          </div>
+          <div class="person-card fade-in fade-in-delay-2">
+            <div class="pc-avatar"><span class="pc-avatar-initials">OB</span></div>
+            <div class="pc-role">Events Volunteer</div>
+            <div class="pc-name">Omar Butt</div>
+            <div class="pc-affil">Forum &amp; Event Coordination</div>
+            <p class="pc-desc">Coordinates logistics and outreach for Safak Forum events, ensuring smooth execution and strong participant experience.</p>
+          </div>
+        </div>
+        <div class="people-join-band fade-in"><div><strong>Volunteer with Safak</strong><p>We are always looking for motivated young Pakistanis to help with editorial work, events, research, and digital communication. No experience required — just seriousness of purpose.</p></div><a href="#" class="btn btn-accent" onclick="openModal('modal-volunteer');return false;">Volunteer Now</a></div>
+      </div>
+
+      <!-- AMBASSADORS PANEL -->
+      <div class="people-panel" id="panel-ambassadors">
+        <div class="people-grid">
+          <div class="person-card ambassador-card fade-in">
+            <div class="pc-avatar"><span class="pc-avatar-initials">ZM</span></div>
+            <div class="pc-role">Campus Ambassador</div>
+            <div class="pc-name">Zara Malik</div>
+            <div class="pc-affil">LUMS, Lahore</div>
+            <p class="pc-desc">Represents Safak at LUMS, organising reading circles, discussion sessions, and connecting students to Safak Academy cohorts.</p>
+          </div>
+          <div class="person-card ambassador-card fade-in fade-in-delay-1">
+            <div class="pc-avatar"><span class="pc-avatar-initials">KA</span></div>
+            <div class="pc-role">Campus Ambassador</div>
+            <div class="pc-name">Kamran Ahmed</div>
+            <div class="pc-affil">IBA, Karachi</div>
+            <p class="pc-desc">Leads Safak's presence at IBA, facilitating civic discussions on campus and helping recruit contributors from Karachi's university community.</p>
+          </div>
+          <div class="person-card ambassador-card fade-in fade-in-delay-2">
+            <div class="pc-avatar" style="background:var(--charcoal)"><span class="pc-avatar-initials" style="color:var(--accent-light)">+</span></div>
+            <div class="pc-role">Open Position</div>
+            <div class="pc-name">Your University</div>
+            <div class="pc-affil">Across Pakistan</div>
+            <p class="pc-desc">We are actively recruiting campus ambassadors across Pakistan. If you attend a university and believe in Safak's mission, this role is for you.</p>
+          </div>
+        </div>
+        <div class="people-join-band fade-in"><div><strong>Become a Campus Ambassador</strong><p>Represent Safak at your university. Help grow the network, connect peers to our programs, and build civic culture on your campus.</p></div><a href="#" class="btn btn-accent" onclick="openModal('modal-ambassador');return false;">Apply Now</a></div>
+      </div>
+
+      <!-- ALUMNI PANEL -->
+      <div class="people-panel" id="panel-alumni">
+        <div class="people-grid">
+          <div class="person-card fade-in">
+            <div class="pc-avatar"><span class="pc-avatar-initials">NH</span></div>
+            <div class="pc-role">Academy Alumna · Cohort 1</div>
+            <div class="pc-name">Nida Hussain</div>
+            <div class="pc-affil">Civic Writing Track</div>
+            <p class="pc-desc">Completed Safak Academy's Civic Writing track in the inaugural cohort. Now a regular contributor to Safak Voice with two published essays.</p>
+          </div>
+          <div class="person-card fade-in fade-in-delay-1">
+            <div class="pc-avatar"><span class="pc-avatar-initials">BK</span></div>
+            <div class="pc-role">Academy Alumnus · Cohort 1</div>
+            <div class="pc-name">Bilal Khan</div>
+            <div class="pc-affil">Policy Analysis Track</div>
+            <p class="pc-desc">Completed the Policy Analysis track and went on to submit a featured policy take on Pakistan's water governance challenge.</p>
+          </div>
+          <div class="person-card fade-in fade-in-delay-2">
+            <div class="pc-avatar" style="background:var(--charcoal)"><span class="pc-avatar-initials" style="color:var(--accent-light)">?</span></div>
+            <div class="pc-role">Future Alumnus</div>
+            <div class="pc-name">Next Cohort Open</div>
+            <div class="pc-affil">Applications Ongoing</div>
+            <p class="pc-desc">Safak Academy's next cohort is open for applications. Join the growing community of Safak alumni who are developing real civic skills.</p>
+          </div>
+        </div>
+        <div class="people-join-band fade-in"><div><strong>Join Safak Academy</strong><p>Eight weeks. Real skills. A serious cohort of peers. Apply to the next Safak Academy cohort and join a community of learners who take Pakistan seriously.</p></div><a href="#" class="btn btn-accent" onclick="openModal('modal-academy');return false;">Apply to Academy</a></div>
+      </div>
+
+      <!-- PARTNERS PANEL -->
+      <div class="people-panel" id="panel-partners">
+        <div class="partner-row">
+          <div class="partner-card fade-in"><div><div style="width:56px;height:56px;background:var(--accent-pale);border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><div class="partner-name">Academic Partners</div><p style="font-size:.85rem;margin-top:8px;color:var(--muted)">Universities and research institutions collaborating on civic education and policy programming.</p></div></div>
+          <div class="partner-card fade-in fade-in-delay-1"><div><div style="width:56px;height:56px;background:var(--accent-pale);border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div><div class="partner-name">Civil Society Partners</div><p style="font-size:.85rem;margin-top:8px;color:var(--muted)">NGOs, think tanks, and civic organisations working alongside Safak on shared missions.</p></div></div>
+          <div class="partner-card fade-in fade-in-delay-2"><div><div style="width:56px;height:56px;background:var(--accent-pale);border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div><div class="partner-name">Institutional Partners</div><p style="font-size:.85rem;margin-top:8px;color:var(--muted)">Media organisations, professional bodies, and institutions supporting Safak's programs and reach.</p></div></div>
+        </div>
+        <div class="people-join-band fade-in" style="margin-top:32px"><div><strong>Partner with Safak</strong><p>Universities, civil society organisations, and institutions can partner with Safak to co-host events, co-deliver programs, or support the platform's mission. We welcome serious, aligned collaborations.</p></div><a href="#" class="btn btn-accent" onclick="openModal('modal-partnership');return false;">Discuss Partnership</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR TEAM SECTION -->
+  <section class="our-team-section">
+    <div class="container">
+      <div class="ot-header fade-in">
+        <p class="eyebrow" style="color:var(--accent-light)">The Founding Team</p>
+        <h2>The People Behind<br>the Purpose.</h2>
+        <p>Every institution begins with people who choose to show up before it is certain. These are the builders — the ones who saw the gap in Pakistan's civic landscape and decided to do something about it. Not because it was easy. Because it was necessary.</p>
+      </div>
+      <div class="ot-grid">
+        <div class="ot-card ot-card--feature fade-in">
+          <div class="ot-card-num">01</div>
+          <div class="ot-card-photo"><img src="images/image-6.jpg" alt="Muhammad Zain Sardar — Co-Founder, Safak Pakistan" loading="lazy"><div class="ot-card-badge">Co-Founder</div></div>
+          <div class="ot-card-body"><div class="ot-card-role">Co-Founder &amp; Visionary Leader</div><h3 class="ot-card-name">Muhammad Zain Sardar</h3><p class="ot-card-desc">The conviction behind Safak. Zain co-founded the platform in 2026 with one belief: that Pakistan's youth don't lack potential — they lack a serious stage. He builds for permanence, not applause.</p><div class="ot-card-tag">Building from Day 0</div></div>
+        </div>
+        <div class="ot-card ot-card--feature fade-in fade-in-delay-1">
+          <div class="ot-card-num">02</div>
+          <div class="ot-card-photo"><img src="images/image-7.jpg" alt="Muhammad Naeem Aziz — Co-Founder, Safak Pakistan" loading="lazy"><div class="ot-card-badge">Co-Founder</div></div>
+          <div class="ot-card-body"><div class="ot-card-role">Co-Founder &amp; Intellectual Architect</div><h3 class="ot-card-name">Muhammad Naeem Aziz</h3><p class="ot-card-desc">The philosophical backbone of Safak. Naeem shaped the values, editorial standards, and intellectual character that define everything the platform publishes and teaches. He builds with depth, not speed.</p><div class="ot-card-tag">Building from Day 0</div></div>
+        </div>
+        <div class="ot-card fade-in fade-in-delay-2">
+          <div class="ot-card-num">03</div>
+          <div class="ot-card-photo"><img src="images/image-8.jpg" alt="Naeem Zafar — Social Media Lead, Safak Pakistan" loading="lazy"></div>
+          <div class="ot-card-body"><div class="ot-card-role">Social Media Lead</div><h3 class="ot-card-name">Naeem Zafar</h3><p class="ot-card-desc">Among the first to join the founding team. Naeem built our digital presence from nothing — because he believed the mission mattered enough to show up before there were any guarantees.</p><div class="ot-card-tag">Founding Member</div></div>
+        </div>
+        <div class="ot-card fade-in fade-in-delay-3">
+          <div class="ot-card-num">04</div>
+          <div class="ot-card-photo"><img src="images/image-9.jpg" alt="Muhammad Waseem — Writer &amp; Editorial Member, Safak Pakistan" loading="lazy"></div>
+          <div class="ot-card-body"><div class="ot-card-role">Writer &amp; Editorial Member</div><h3 class="ot-card-name">Muhammad Waseem</h3><p class="ot-card-desc">One of Safak's earliest voices and a founding editorial member. Muhammad chose to write for Safak before the platform had a single reader — because he believed in what it stood for.</p><div class="ot-card-tag">Founding Member</div></div>
+        </div>
+      </div>
+      <div class="ot-manifesto fade-in">
+        <div class="ot-manifesto-line"></div>
+        <div class="ot-manifesto-text">
+          <p>"The founding team didn't join for what Safak already was. They joined for what they believed it could become — and that's the only qualification that has ever mattered."</p>
+          <span>— Muhammad Zain Sardar &amp; Muhammad Naeem Aziz, Co-Founders</span>
+        </div>
+        <div class="ot-manifesto-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="join-section">
+    <div class="container"><div class="join-inner"><p class="eyebrow">Be Part of the People</p><h2>Join the<br>community.</h2><p>Every person in the Safak community chose to take Pakistan's future seriously. If that's you, we'd like to know.</p><div class="join-btns"><a href="#" class="btn btn-white btn-lg" onclick="showPage('join')">Participate in Safak</a><a href="#" class="btn btn-outline-white btn-lg" onclick="showPage('contact')">Get in Touch</a></div></div></div>
+  </section>
+</div><!-- /people -->
+
+<!-- ============================================================
+     ABOUT PAGE
+============================================================ -->
+<div class="page" id="page-about">
+  <div class="page-hero"><div class="container"><p class="eyebrow">About Safak Pakistan</p><h1>A New Dawn<br>for Pakistan's Youth</h1><p>Safak — meaning "new dawn" in Turkish — was founded in 2026 on one belief: that Pakistan's future depends on how seriously its youth engage with the present.</p></div></div>
+
+  <section class="rule-top" style="background:var(--white)">
+    <div class="container">
+      <div class="about-intro-grid">
+        <div class="fade-in"><p class="eyebrow">Our Mission</p><h2 style="margin-top:16px">We exist to build a generation that <em style="font-style:italic;color:var(--accent)">thinks first.</em></h2></div>
+        <div class="about-intro-text fade-in fade-in-delay-1">
+          <p>Safak Pakistan is a <strong>youth-led think tank and civic platform</strong>. We are non-partisan, editorially independent, and deeply committed to intellectual honesty, civic responsibility, and principled engagement with public life.</p>
+          <p>We were founded in 2026 because Pakistan's youth needed more than motivation. They needed infrastructure — a platform to publish, a space to learn, a community to grow in, and a set of standards to grow toward.</p>
+          <p>Our mission is to help Pakistan's young people develop the knowledge, skills, values, and habits of mind that make them genuinely capable of contributing to a better country — not someday, but now.</p>
+          <div class="pull-quote" style="margin:32px 0"><p>"Think clearly. Speak responsibly. Learn seriously. Contribute with discipline."</p></div>
+          <p>This is not an ideological project. Safak does not represent any political party, faction, or movement. We represent the interest every serious citizen should share: in a country governed well, thought about clearly, and improved over time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rule-top" style="background:var(--off-white)">
+    <div class="container">
+      <div class="meaning-inner">
+        <div class="fade-in"><div class="meaning-word">Şa<em>fak</em></div><p style="margin-top:20px;font-size:.875rem;color:var(--muted);letter-spacing:.06em;font-weight:500">Turkish · noun · New Dawn</p></div>
+        <div class="fade-in fade-in-delay-1"><p class="eyebrow">The Name</p><h2 style="margin-top:16px;margin-bottom:20px">What the name means.</h2><p style="margin-bottom:20px">Şafak is a Turkish word meaning <strong>new dawn</strong> — the light that breaks at the beginning of a new day, before the sun has fully risen. It is a moment of promise and clarity.</p><p style="margin-bottom:20px">We chose this name deliberately. The work of improving a country is not dramatic or sudden. It is slow, patient, and begins long before results are visible — like dawn before daylight. Safak Pakistan is that beginning.</p><p>We are building the habits, knowledge, and civic culture that Pakistan's future leadership will need — one young person at a time.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rule-top" style="background:var(--white)">
+    <div class="container">
+      <div class="section-header fade-in"><p class="eyebrow">Our Values</p><h2>What Safak stands for.</h2><p>Six principles that guide everything we publish, teach, and do.</p></div>
+      <div class="values-grid">
+        <div class="value-card fade-in"><div class="value-letter">T</div><h4>Truth</h4><p>We are committed to factual accuracy, intellectual honesty, and the courage to follow arguments wherever they lead.</p></div>
+        <div class="value-card fade-in fade-in-delay-1"><div class="value-letter">F</div><h4>Fairness</h4><p>We represent all serious viewpoints honestly and hold contributors to standards of balanced, good-faith reasoning.</p></div>
+        <div class="value-card fade-in fade-in-delay-2"><div class="value-letter">R</div><h4>Responsibility</h4><p>Every voice on Safak carries responsibility. We take that seriously — in our editorial standards, our conduct, and our community norms.</p></div>
+        <div class="value-card fade-in"><div class="value-letter">D</div><h4>Discipline</h4><p>Good civic work requires patience, sustained effort, and the willingness to develop skill over time. We build those habits in everything we do.</p></div>
+        <div class="value-card fade-in fade-in-delay-1"><div class="value-letter">I</div><h4>Independence</h4><p>We are not affiliated with any political party, government body, or commercial interest. Our platform belongs to the community we serve.</p></div>
+        <div class="value-card fade-in fade-in-delay-2"><div class="value-letter">H</div><h4>Hope</h4><p>We believe Pakistan can be better — and that the most powerful path to that future runs through the serious development of its youth.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="join-section">
+    <div class="container"><div class="join-inner"><p class="eyebrow">Be Part of the Dawn</p><h2>Ready to join<br>the movement?</h2><p>Safak is built by young Pakistanis who believe that seriousness, honesty, and discipline are the foundations of real change.</p><div class="join-btns"><a href="#" class="btn btn-white btn-lg" onclick="showPage('join')">Join Safak</a><a href="#" class="btn btn-outline-white btn-lg" onclick="showPage('people')">Meet Our People</a></div></div></div>
+  </section>
+</div><!-- /about -->
+
+<!-- ============================================================
+     VOICE PAGE
+============================================================ -->
+<div class="page" id="page-voice">
+  <div class="page-hero"><div class="container"><p class="eyebrow">Safak Voice</p><h1>Publish<br>Your Voice</h1><p>Our open publishing platform for Pakistani youth. Write, argue, explain, and share — with quality, fairness, and responsibility as the standard.</p></div></div>
+  <section class="rule-top" style="background:var(--white)">
+    <div class="container">
+      <div class="section-header fade-in"><p class="eyebrow">Accepted Formats</p><h2>What you can submit.</h2></div>
+      <div class="formats-grid">
+        <div class="format-card fade-in"><div class="format-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div><h4>Essays &amp; Long-Form Analysis</h4><p>800–2,500 words. A clear argument, evidence, and a considered conclusion. Our most common format.</p></div>
+        <div class="format-card fade-in fade-in-delay-1"><div class="format-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div><h4>Video Opinions</h4><p>3–7 minutes. A concise, well-argued video take on a current issue. Must meet basic production and content standards for clarity and credibility.</p></div>
+        <div class="format-card fade-in"><div class="format-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h4>Policy Takes</h4><p>400–900 words on a specific policy question or decision. Direct and evidence-based. Ideal for responding to current events or developments.</p></div>
+        <div class="format-card fade-in fade-in-delay-1"><div class="format-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><h4>Explainers</h4><p>Clear, accessible explanations of complex systems, processes, or issues for a general audience.</p></div>
+      </div>
+      <div class="guidelines fade-in">
+        <h3>Editorial Standards</h3>
+        <ul class="guidelines-list">
+          <li>Arguments must be based on verifiable facts and cited sources.</li>
+          <li>All claims should be clearly distinguished from opinions.</li>
+          <li>Opposing viewpoints must be represented fairly.</li>
+          <li>Personal attacks, inflammatory language, or hate speech are grounds for rejection.</li>
+          <li>Content must be original and not published elsewhere.</li>
+          <li>Partisan political messaging or party propaganda is not accepted.</li>
+          <li>Writing must meet basic standards of clarity and structure.</li>
+          <li>Contributors must disclose any conflicts of interest.</li>
+          <li>Factual errors identified after publication will be corrected and noted.</li>
+          <li>Our editorial team may suggest edits; final approval rests with the contributor.</li>
+        </ul>
+      </div>
+      <div class="submit-cta fade-in"><p class="eyebrow">Ready to Contribute?</p><h3 style="margin-bottom:16px">Your voice belongs here.</h3><p style="margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto">Join young Pakistanis building the habit of serious, responsible civic writing.</p><a href="#" class="btn btn-accent btn-lg" onclick="openModal('modal-voice');return false;">Submit Your Piece</a></div>
+    </div>
+  </section>
+</div><!-- /voice -->
+
+<!-- ============================================================
+     ACADEMY PAGE
+============================================================ -->
+<div class="page" id="page-academy">
+  <div class="page-hero"><div class="container"><p class="eyebrow">Safak Academy</p><h1>Build the<br>Skills That Matter</h1><p>A structured, cohort-based development program for Pakistani youth who want to develop the practical skills of serious civic participation.</p></div></div>
+  <section class="rule-top" style="background:var(--white)">
+    <div class="container">
+      <div class="section-header fade-in"><p class="eyebrow">Learning Tracks</p><h2>What you'll develop.</h2><p>Six tracks designed for the skills Pakistan's civic leadership actually needs.</p></div>
+      <div class="tracks-grid">
+        <div class="track-card fade-in"><div class="track-num">01</div><h4>Civic Writing</h4><p>Write clearly, argue fairly, and develop the habits of a responsible public intellectual.</p></div>
+        <div class="track-card fade-in fade-in-delay-1"><div class="track-num">02</div><h4>Research &amp; Fact-Checking</h4><p>Source information rigorously, verify claims, detect manipulation, and build arguments on solid factual foundations.</p></div>
+        <div class="track-card fade-in fade-in-delay-2"><div class="track-num">03</div><h4>Policy Analysis</h4><p>Understand how policies are made, evaluated, and improved. Develop the framework to assess tradeoffs and anticipate consequences.</p></div>
+        <div class="track-card fade-in"><div class="track-num">04</div><h4>Public Speaking</h4><p>Develop the confidence, clarity, and composure to speak effectively in public settings.</p></div>
+        <div class="track-card fade-in fade-in-delay-1"><div class="track-num">05</div><h4>Digital Communication</h4><p>Learn how to communicate ideas effectively in digital environments — responsibly, clearly, and with attention to audience and impact.</p></div>
+        <div class="track-card fade-in fade-in-delay-2"><div class="track-num">06</div><h4>Civic Leadership</h4><p>Develop the mindset, skills, and habits of someone who takes responsibility for outcomes — not just opinions.</p></div>
+      </div>
+      <div class="cohort-info fade-in">
+        <div><p class="eyebrow" style="color:rgba(255,255,255,.45)">The Model</p><h3>Cohort-Based Learning</h3><p>Safak Academy runs in cohorts — structured groups of 15–30 participants who learn together over a fixed period. Cohorts are intentionally small to enable real mentorship, peer feedback, and accountability.</p><p>Participants leave with real work in their portfolio and real skills they can demonstrate.</p><a href="#" class="btn btn-accent" onclick="openModal('modal-academy');return false;" style="margin-top:8px">Apply to a Cohort</a></div>
+        <div class="cohort-stats">
+          <div class="cs"><span class="cs-n">15–30</span><span class="cs-l">Per Cohort</span></div>
+          <div class="cs"><span class="cs-n">8 wks</span><span class="cs-l">Duration</span></div>
+          <div class="cs"><span class="cs-n">6</span><span class="cs-l">Tracks</span></div>
+          <div class="cs"><span class="cs-n">Free</span><span class="cs-l">No Cost</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="join-section"><div class="container"><div class="join-inner"><p class="eyebrow">Applications Open</p><h2>Invest in<br>your development.</h2><p>Safak Academy is selective but accessible. We look for serious, motivated youth willing to commit to the process.</p><div class="join-btns"><a href="#" class="btn btn-white btn-lg" onclick="openModal('modal-academy');return false;">Apply Now</a><a href="#" class="btn btn-outline-white btn-lg" onclick="showPage('contact')">Ask a Question</a></div></div></div></section>
+</div><!-- /academy -->
+
+<!-- ============================================================
+     EVENTS PAGE
+============================================================ -->
+<div class="page" id="page-events">
+  <div class="page-hero"><div class="container"><p class="eyebrow">Safak Forum</p><h1>Serious<br>Conversations, Live</h1><p>Structured dialogue on Pakistan's most important policy and governance questions. Not networking sessions. Not motivational talks. Serious civic conversations.</p></div></div>
+  <section class="rule-top" style="background:var(--white)">
+    <div class="container">
+      <div class="section-header fade-in"><p class="eyebrow">Upcoming Events</p><h2>Join the conversation.</h2></div>
+      <div class="events-grid">
+        <div class="event-card fade-in"><div class="event-date">June 14, 2026 — Lahore</div><div class="event-type">Panel Discussion</div><h4>Pakistan's Energy Crisis: Policy Options for the Next Government</h4><p>A structured panel with four experts examining the structural causes of Pakistan's energy crisis and the policy options available.</p><a href="#" class="event-register" onclick="openModal('modal-event1');return false;">Register →</a></div>
+        <div class="event-card fade-in fade-in-delay-1"><div class="event-date">July 5, 2026 — Virtual</div><div class="event-type">Roundtable</div><h4>Youth Representation in Local Government: Barriers and Opportunities</h4><p>A moderated discussion examining the structural barriers to youth participation in Pakistani local government.</p><a href="#" class="event-register" onclick="openModal('modal-event2');return false;">Register →</a></div>
+        <div class="event-card fade-in fade-in-delay-2"><div class="event-date">August 2026 — Karachi</div><div class="event-type">Public Forum</div><h4>The State of Pakistani Institutions: A Youth Perspective</h4><p>Safak's flagship annual public forum. A day of panels, workshops, and dialogue on Pakistan's civic institutions.</p><a href="#" class="event-register" onclick="openModal('modal-event3');return false;">Register →</a></div>
+      </div>
+      <div class="section-header fade-in" style="margin-top:80px"><p class="eyebrow">Past Events</p><h2>Where we've been.</h2></div>
+      <div class="events-grid">
+        <div class="event-card fade-in" style="opacity:.75"><div class="event-date">March 2026 — Islamabad</div><div class="event-type" style="background:#f0f0f0;color:var(--muted)">Completed</div><h4>Civic Education in Pakistan: What Needs to Change?</h4><p>A panel of educators, youth advocates, and policymakers debating the future of civic education.</p></div>
+        <div class="event-card fade-in fade-in-delay-1" style="opacity:.75"><div class="event-date">February 2026 — Virtual</div><div class="event-type" style="background:#f0f0f0;color:var(--muted)">Completed</div><h4>Understanding Pakistan's Budget: A Public Explainer</h4><p>A practical session helping youth understand how Pakistan's annual federal budget is constructed.</p></div>
+        <div class="event-card fade-in fade-in-delay-2" style="opacity:.75"><div class="event-date">January 2026 — Lahore</div><div class="event-type" style="background:#f0f0f0;color:var(--muted)">Completed</div><h4>Safak Inaugural Forum: Launching Pakistan's Youth Civic Platform</h4><p>The inaugural Safak Forum — introducing the platform, its mission, and its programs to an invited audience.</p></div>
+      </div>
+    </div>
+  </section>
+</div><!-- /events -->
+
+<!-- ============================================================
+     JOIN PAGE
+============================================================ -->
+<div class="page" id="page-join">
+  <div class="page-hero"><div class="container"><p class="eyebrow">Join Safak Pakistan</p><h1>Your Place<br>in the Movement</h1><p>There are multiple ways to be part of Safak. Find the path that fits where you are and what you want to contribute.</p></div></div>
+  <section class="rule-top" style="background:var(--white)">
+    <div class="container">
+      <div class="section-header fade-in"><p class="eyebrow">Participation Paths</p><h2>How you can get involved.</h2></div>
+      <div class="paths-grid">
+        <div class="path-card fade-in"><div class="path-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div><h4>Contributor</h4><p>Submit essays, policy takes, video opinions, or explainers to Safak Voice.</p><a href="#" class="path-btn" onclick="showPage('voice')">Start writing →</a></div>
+        <div class="path-card fade-in fade-in-delay-1"><div class="path-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><h4>Academy Participant</h4><p>Apply to a Safak Academy cohort. Develop real skills in civic writing, research, policy analysis, or public speaking.</p><a href="#" class="path-btn" onclick="showPage('academy')">Apply to cohort →</a></div>
+        <div class="path-card fade-in fade-in-delay-2"><div class="path-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><h4>Volunteer</h4><p>Support Safak in editorial review, event support, outreach, research assistance, or program coordination.</p><a href="#" class="path-btn" onclick="showPage('contact')">Get in touch →</a></div>
+        <div class="path-card fade-in"><div class="path-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h4>Campus Ambassador</h4><p>Represent Safak at your university. Help grow the network and connect peers to our programs.</p><a href="#" class="path-btn" onclick="showPage('contact')">Apply as ambassador →</a></div>
+        <div class="path-card fade-in fade-in-delay-1"><div class="path-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><h4>Event Attendee</h4><p>Attend Safak Forum events — panels, roundtables, and public discussions. No commitment required.</p><a href="#" class="path-btn" onclick="showPage('events')">See events →</a></div>
+        <div class="path-card fade-in fade-in-delay-2"><div class="path-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div><h4>Partner Organisation</h4><p>Universities, civil society organisations, and institutions can partner with Safak on programs and events.</p><a href="#" class="path-btn" onclick="showPage('contact')">Discuss partnership →</a></div>
+      </div>
+    </div>
+  </section>
+  <section class="join-section"><div class="container"><div class="join-inner"><p class="eyebrow">Begin Here</p><h2>Take the<br>first step.</h2><p>It takes one submission, one application, or one conversation to become part of Safak.</p><div class="join-btns"><a href="#" class="btn btn-white btn-lg" onclick="showPage('contact')">Get in Touch</a><a href="#" class="btn btn-outline-white btn-lg" onclick="openModal('modal-voice');return false;">Submit a Piece</a></div></div></div></section>
+</div><!-- /join -->
+
+<!-- ============================================================
+     CONTACT PAGE
+============================================================ -->
+<div class="page" id="page-contact">
+  <div class="page-hero"><div class="container"><p class="eyebrow">Contact Safak</p><h1>Let's Connect</h1><p>For submissions, partnerships, media inquiries, or general questions — we respond to all serious correspondence.</p></div></div>
+  <section class="rule-top" style="background:var(--white)">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="fade-in">
+          <h3 style="font-size:1.4rem;margin-bottom:20px">Get in touch</h3>
+          <p style="margin-bottom:24px">We welcome correspondence from contributors, partners, journalists, researchers, and anyone interested in what we're building.</p>
+          <div class="contact-detail"><div class="cd-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="cd-label">General Inquiries</div><div class="cd-value"><a href="mailto:hello@safakpakistan.org">hello@safakpakistan.org</a></div></div></div>
+          <div class="contact-detail"><div class="cd-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div><div><div class="cd-label">Editorial &amp; Submissions</div><div class="cd-value"><a href="mailto:editorial@safakpakistan.org">editorial@safakpakistan.org</a></div></div></div>
+          <div class="contact-detail"><div class="cd-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div><div><div class="cd-label">Partnerships</div><div class="cd-value"><a href="mailto:partnerships@safakpakistan.org">partnerships@safakpakistan.org</a></div></div></div>
+          <div class="contact-detail"><div class="cd-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0016 2a4.48 4.48 0 00-4.48 4.48v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></div><div><div class="cd-label">Social Media</div><div class="cd-value">@SafakPakistan across all platforms</div></div></div>
+        </div>
+        <form class="contact-form fade-in fade-in-delay-1" onsubmit="handleContactWhatsApp(event)">
+          <div class="form-row">
+            <div class="form-group"><label>First Name</label><input type="text" placeholder="Your first name" required></div>
+            <div class="form-group"><label>Last Name</label><input type="text" placeholder="Your last name" required></div>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="you@example.com" required></div>
+          <div class="form-group"><label>Subject</label><select><option value="">Select a topic…</option><option>General Inquiry</option><option>Submit a Piece</option><option>Academy Application</option><option>Event Registration</option><option>Campus Ambassador</option><option>Partnership / Collaboration</option><option>Media Inquiry</option></select></div>
+          <div class="form-group"><label>Message</label><textarea placeholder="Tell us what's on your mind…" required></textarea></div>
+          <button type="submit" class="btn btn-accent" style="align-self:flex-start">Send via WhatsApp <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.64A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg></button>
+          <div id="form-success" style="display:none;padding:16px;background:var(--accent-pale);border-radius:4px;border-left:3px solid var(--accent)"><strong style="color:var(--accent)">Opening WhatsApp…</strong> <span style="color:var(--mid);font-size:.9rem">Complete sending via WhatsApp to reach us.</span></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div><!-- /contact -->
+
+<!-- ============================================================
+     CAREERS PAGE
+============================================================ -->
+<div class="page" id="page-careers">
+  <section class="careers-hero">
+    <div class="careers-hero-inner container">
+      <div class="fade-in">
+        <p class="eyebrow">Founding Team · 2026 Cohort · Five Roles Open</p>
+        <h1>Build Safak<br><em>From the Ground Up.</em></h1>
+        <p>These aren't volunteer slots or internships. We are looking for five founding team members — people who will own real functions, make real decisions, and build a lasting institution with us. If you want to shape something from day one, read on.</p>
+        <div class="careers-hero-btns">
+          <a href="#" class="btn btn-accent btn-lg" onclick="document.getElementById('open-roles').scrollIntoView({behavior:'smooth'});return false;">See Open Roles <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg></a>
+          <a href="#" class="btn btn-outline-white btn-lg" onclick="openModal('modal-careers-general');return false;">Express Interest</a>
+        </div>
+      </div>
+      <div class="fade-in fade-in-delay-2">
+        <div class="careers-notice">
+          <strong>⚡ Founding Member Notice</strong>
+          <p>These are founding positions. Compensation is performance-linked and grows with the organisation — not a fixed salary at launch. In return, you get direct access to the founders, genuine ownership of your domain, and the chance to build something real in Pakistan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="careers-strip">
+    <div class="careers-strip-inner container">
+      <div class="cstrip-stat"><div class="n">5</div><div class="l">Roles Open</div></div>
+      <div class="cstrip-stat"><div class="n">∞</div><div class="l">Growth Ceiling</div></div>
+      <div class="cstrip-stat"><div class="n">Day 1</div><div class="l">Ownership</div></div>
+      <div class="cstrip-stat"><div class="n">2026</div><div class="l">Foundation Year</div></div>
+      <div class="cstrip-stat"><div class="n">PKR</div><div class="l">Performance Linked</div></div>
+    </div>
+  </div>
+
+  <section class="roles-section" id="open-roles">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="eyebrow">Open Positions</p>
+        <h2>Five Roles.<br>Five Domains. One Mission.</h2>
+        <p>Each role owns a critical function of Safak Pakistan. These are not support roles — they are leadership positions that will define how we operate, grow, and lead.</p>
+      </div>
+      <div class="roles-grid">
+        <div class="role-card fade-in">
+          <div class="role-num">01</div>
+          <div class="role-dept">Core Leadership</div>
+          <h3>Phase Coordinator</h3>
+          <p>The operational backbone of Phase One. You keep every moving part aligned — deadlines met, communication flowing, and the team's collective energy pointed in one direction.</p>
+          <ul class="role-responsibilities">
+            <li>Maintain team coordination and keep the workflow on schedule</li>
+            <li>Facilitate weekly check-ins and progress reviews</li>
+            <li>Manage task delegation and cross-team communication</li>
+            <li>Spot bottlenecks early and resolve them before they stall progress</li>
+            <li>Serve as the team's first point of contact for any issue</li>
+          </ul>
+          <div class="role-footer">
+            <span class="role-badge">Phase One · Founding Member</span>
+            <button class="role-apply-btn" onclick="openCareersModal('Phase Coordinator')">Apply Now <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+          </div>
+        </div>
+        <div class="role-card fade-in fade-in-delay-1">
+          <div class="role-num">02</div>
+          <div class="role-dept">Content Quality</div>
+          <h3>Editor</h3>
+          <p>Great editors don't just fix mistakes — they make good ideas shine. You take raw contributions and shape them into content that actually lands, without ever erasing the writer's authentic voice.</p>
+          <ul class="role-responsibilities">
+            <li>Edit written articles for structure, clarity, and real impact</li>
+            <li>Review and refine video scripts and audio content</li>
+            <li>Ensure every piece aligns with Safak's editorial standards</li>
+            <li>Collaborate closely with the Director on overall content direction</li>
+            <li>Protect and preserve each contributor's unique voice</li>
+          </ul>
+          <div class="role-footer">
+            <span class="role-badge">Phase One · Founding Member</span>
+            <button class="role-apply-btn" onclick="openCareersModal('Editor')">Apply Now <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+          </div>
+        </div>
+        <div class="role-card fade-in fade-in-delay-2">
+          <div class="role-num">03</div>
+          <div class="role-dept">Technology &amp; Tools</div>
+          <h3>AI &amp; Tools Specialist</h3>
+          <p>You don't just use AI — you think with it. This role keeps Safak at the cutting edge of content production, deploying the best tools strategically to sharpen quality and accelerate output.</p>
+          <ul class="role-responsibilities">
+            <li>Operate AI tools for content generation, editing, and enhancement</li>
+            <li>Handle automated captioning, transcription, and translations</li>
+            <li>Support thumbnail, graphic, and visual asset creation using AI</li>
+            <li>Research and implement new tools that improve team efficiency</li>
+            <li>Train team members on effective AI tool usage</li>
+          </ul>
+          <div class="role-footer">
+            <span class="role-badge">Phase One · Founding Member</span>
+            <button class="role-apply-btn" onclick="openCareersModal('AI &amp; Tools Specialist')">Apply Now <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+          </div>
+        </div>
+        <div class="role-card fade-in">
+          <div class="role-num">04</div>
+          <div class="role-dept">Creative Direction</div>
+          <h3>Content Director</h3>
+          <p>The creative and editorial authority. You shape Safak Voice's direction — what gets published, how it's presented, and how each piece contributes to the broader narrative.</p>
+          <ul class="role-responsibilities">
+            <li>Review and approve all content before publication</li>
+            <li>Set the editorial tone, themes, and content calendar</li>
+            <li>Give actionable feedback to contributors on every submission</li>
+            <li>Maintain consistent quality aligned with Safak's mission</li>
+            <li>Continuously evolve the content strategy as we grow</li>
+          </ul>
+          <div class="role-footer">
+            <span class="role-badge">Phase One · Founding Member</span>
+            <button class="role-apply-btn" onclick="openCareersModal('Content Director')">Apply Now <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+          </div>
+        </div>
+        <div class="role-card fade-in fade-in-delay-1">
+          <div class="role-num">05</div>
+          <div class="role-dept">Growth &amp; Community</div>
+          <h3>Outreach Lead</h3>
+          <p>The bridge between Safak and Pakistan's youth. You find contributors, build relationships, and ensure a steady pipeline of serious voices joining the platform.</p>
+          <ul class="role-responsibilities">
+            <li>Identify, recruit, and onboard new contributors from across Pakistan</li>
+            <li>Build relationships with universities, organisations, and communities</li>
+            <li>Manage Safak's outreach channels and social media growth</li>
+            <li>Develop partnerships that extend Safak's reach and impact</li>
+            <li>Represent Safak at events, campuses, and public forums</li>
+          </ul>
+          <div class="role-footer">
+            <span class="role-badge">Phase One · Founding Member</span>
+            <button class="role-apply-btn" onclick="openCareersModal('Outreach Lead')">Apply Now <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fm-section">
+    <div class="container">
+      <div class="fm-inner">
+        <div class="fm-label fade-in">
+          <p class="eyebrow" style="color:var(--accent-light)">What This Means</p>
+          <h2>Founding Member,<br>Not <em>Employee.</em></h2>
+          <p>We are not hiring staff. We are selecting co-builders — people who will be as invested in Safak's success as its founders are. The standard is high because what we're building demands it.</p>
+          <div style="margin-top:32px;padding:24px 28px;background:rgba(255,255,255,.04);border-left:3px solid var(--accent);border-radius:0 4px 4px 0">
+            <p style="font-family:var(--serif);font-size:1.1rem;font-style:italic;color:rgba(250,250,248,.75);margin:0;line-height:1.6">"We want people who feel the same urgency we do — people who look at Pakistan and see not just what is, but what could be."</p>
+            <p style="font-size:.8rem;color:rgba(250,250,248,.35);margin:12px 0 0;font-weight:600;letter-spacing:.06em;text-transform:uppercase">— Muhammad Zain Sardar &amp; Muhammad Naeem Aziz, Founders</p>
+          </div>
+        </div>
+        <div class="fm-values fade-in fade-in-delay-1">
+          <div class="fm-value"><div class="fm-v-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div class="fm-v-text"><h4>Real Ownership</h4><p>You lead your domain entirely. No micro-management, no hand-holding. Full ownership of strategy, execution, and outcomes within your function.</p></div></div>
+          <div class="fm-value"><div class="fm-v-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><div class="fm-v-text"><h4>Direct Founders Access</h4><p>Weekly direct sessions with Muhammad Zain Sardar and Muhammad Naeem Aziz. No bureaucracy, no layers. Your ideas go straight to the top.</p></div></div>
+          <div class="fm-value"><div class="fm-v-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></div><div class="fm-v-text"><h4>Performance-Linked Growth</h4><p>Compensation is tied directly to organisational growth. As Safak scales, your reward scales with it. We succeed together or not at all.</p></div></div>
+          <div class="fm-value"><div class="fm-v-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="fm-v-text"><h4>Building Pakistan's Future</h4><p>This isn't a job to put on your CV. This is work that shapes how a generation of Pakistanis thinks, speaks, and leads. That's the real return.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header fade-in" style="text-align:center;margin:0 auto 0;max-width:560px">
+        <p class="eyebrow">Our Process</p>
+        <h2>How We Choose<br>Founding Members</h2>
+        <p>We move fast and make decisions on substance — not pedigree. This is what the process looks like from application to offer.</p>
+      </div>
+      <div class="process-steps fade-in" style="margin-top:56px">
+        <div class="process-step" data-step="01"><div class="process-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div><h4>Apply</h4><p>Submit your application via WhatsApp with a motivation statement and relevant experience. No CVs required — we want thinking, not credentials.</p></div>
+        <div class="process-step" data-step="02"><div class="process-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h4>Review</h4><p>Founders personally review every application within 5–7 days. We look for clarity of thought, evidence of capability, and alignment with Safak's mission.</p></div>
+        <div class="process-step" data-step="03"><div class="process-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><h4>Interview</h4><p>A 45-minute direct conversation with the founders — no HR screen, no panel. We want to understand how you think, not how well you perform in a formal setting.</p></div>
+        <div class="process-step" data-step="04"><div class="process-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h4>Offer</h4><p>If you're the right person, we move fast. You'll receive a founding member offer within 48 hours of the final interview. We don't wait, and we don't leave people hanging.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="careers-cta">
+    <div class="container">
+      <p class="eyebrow">Ready to Build?</p>
+      <h2>Pakistan Needs This.<br>We Need You.</h2>
+      <p>Five roles. One founding cohort. The opportunity to build something that will outlast all of us. If you have the ability and the conviction, apply now.</p>
+      <div class="join-btns">
+        <a href="#" class="btn btn-white btn-lg" onclick="openModal('modal-careers-general');return false;">Apply / Express Interest</a>
+        <a href="mailto:hello@safakpakistan.org" class="btn btn-outline-white btn-lg">Email Us Directly</a>
+      </div>
+    </div>
+  </div>
+</div><!-- /careers -->
+
+</div><!-- /page-body -->
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo" onclick="showPage('home')" style="display:inline-block;line-height:0">
+          <img src="images/image-1.svg" alt="Safak Pakistan" class="footer-logo-img">
+        </a>
+        <p>A youth-led think tank and civic platform. Helping Pakistan's next generation think clearly, speak responsibly, learn seriously, and lead with discipline.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Twitter / X" title="Twitter / X"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0016 2a4.48 4.48 0 00-4.48 4.48v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+          <a href="https://www.facebook.com/share/1E4n2ZYrji/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook" title="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" class="social-link" aria-label="Instagram" title="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="social-link" aria-label="TikTok" title="TikTok"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg></a>
+          <a href="#" class="social-link" aria-label="YouTube" title="YouTube"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+          <a href="https://www.linkedin.com/company/safakpakistan/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn" title="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Platform</h5>
+        <ul>
+          <li><a href="#" onclick="showPage('about')">About Safak</a></li>
+          <li><a href="#" onclick="showPage('people')">Our People</a></li>
+          <li><a href="#" onclick="showPage('voice')">Safak Voice</a></li>
+          <li><a href="#" onclick="showPage('academy')">Safak Academy</a></li>
+          <li><a href="#" onclick="showPage('events')">Safak Forum</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Participate</h5>
+        <ul>
+          <li><a href="#" onclick="showPage('voice')">Submit a Piece</a></li>
+          <li><a href="#" onclick="showPage('academy')">Join a Cohort</a></li>
+          <li><a href="#" onclick="showPage('events')">Attend Events</a></li>
+          <li><a href="#" onclick="showPage('join')">Become an Ambassador</a></li>
+          <li><a href="#" onclick="showPage('careers')" style="color:var(--accent-light)">Join the Founding Team ↗</a></li>
+          <li><a href="#" onclick="showPage('join')">Volunteer</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+          <li><a href="mailto:hello@safakpakistan.org">hello@safakpakistan.org</a></li>
+          <li><a href="mailto:editorial@safakpakistan.org">editorial@</a></li>
+          <li><a href="mailto:partnerships@safakpakistan.org">partnerships@</a></li>
+          <li><a href="#">@SafakPakistan</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Safak Pakistan. Founded by Muhammad Zain Sardar &amp; Muhammad Naeem Aziz. Non-partisan. Youth-led. Independent.</p>
+      <p class="footer-note">Şafak — <em>new dawn</em> — built for Pakistan's future.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     MODAL OVERLAYS
+============================================================ -->
+
+<!-- 1. JOIN SAFAK -->
+<div class="sf-overlay" id="modal-join" role="dialog" aria-modal="true" aria-labelledby="mj-title">
+  <div class="sf-modal">
+    <button class="sf-modal-close" onclick="closeModal('modal-join')" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="sf-modal-eyebrow">Join Safak Pakistan</div>
+    <h2 id="mj-title">Your Place in<br>the Movement</h2>
+    <p class="sf-modal-sub">Tell us about yourself and how you'd like to contribute. Clicking Submit will open WhatsApp with your details — just hit Send.</p>
+    <form class="sf-form" onsubmit="submitEmailForm(event,'modal-join','Join Safak Application')">
+      <div class="sf-row"><div class="sf-group"><label for="mj-fname">First Name *</label><input id="mj-fname" name="First Name" type="text" placeholder="Muhammad" required></div><div class="sf-group"><label for="mj-lname">Last Name *</label><input id="mj-lname" name="Last Name" type="text" placeholder="Ali" required></div></div>
+      <div class="sf-group"><label for="mj-email">Email Address *</label><input id="mj-email" name="Email" type="email" placeholder="you@example.com" required></div>
+      <div class="sf-group"><label for="mj-phone">Phone / WhatsApp *</label><input id="mj-phone" name="Phone" type="tel" placeholder="+92 300 0000000" required></div>
+      <div class="sf-row"><div class="sf-group"><label for="mj-city">City *</label><input id="mj-city" name="City" type="text" placeholder="Lahore" required></div><div class="sf-group"><label for="mj-age">Age</label><input id="mj-age" name="Age" type="number" min="14" max="35" placeholder="21"></div></div>
+      <div class="sf-group"><label for="mj-univ">University / Institution / Occupation</label><input id="mj-univ" name="University/Occupation" type="text" placeholder="LUMS / Civil Servant / Freelancer"></div>
+      <div class="sf-group"><label for="mj-role">How do you want to get involved? *</label><select id="mj-role" name="Involvement Type" required><option value="">Select…</option><option>Contributor (Write / Publish)</option><option>Academy Participant</option><option>Volunteer</option><option>Campus Ambassador</option><option>Event Attendee</option><option>Multiple / All of the above</option></select></div>
+      <div class="sf-group"><label for="mj-why">Why do you want to join Safak? *</label><textarea id="mj-why" name="Motivation" placeholder="Tell us in a few sentences what draws you to Safak and what you hope to contribute…" required></textarea></div>
+      <div class="sf-submit-row"><button type="submit" class="btn btn-accent">Submit Application <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div>
+      <div class="sf-success" id="modal-join-success"><strong>Application received!</strong><span>We'll review your application and get back to you at the email you provided. Welcome to Safak.</span></div>
+    </form>
+  </div>
+</div>
+
+<!-- 2. SUBMIT YOUR VOICE -->
+<div class="sf-overlay" id="modal-voice" role="dialog" aria-modal="true" aria-labelledby="mv-title">
+  <div class="sf-modal">
+    <button class="sf-modal-close" onclick="closeModal('modal-voice')" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="sf-modal-eyebrow">Safak Voice</div>
+    <h2 id="mv-title">Submit Your<br>Voice or Piece</h2>
+    <p class="sf-modal-sub">Share your work with us. Upload your video/audio to Google Drive, set it to "Anyone with link can view", then paste the link below.</p>
+    <form class="sf-form" onsubmit="submitEmailForm(event,'modal-voice','Voice/Piece Submission')">
+      <div class="sf-row"><div class="sf-group"><label for="mv-fname">First Name *</label><input id="mv-fname" name="First Name" type="text" placeholder="Ayesha" required></div><div class="sf-group"><label for="mv-lname">Last Name *</label><input id="mv-lname" name="Last Name" type="text" placeholder="Khan" required></div></div>
+      <div class="sf-group"><label for="mv-email">Email Address *</label><input id="mv-email" name="Email" type="email" placeholder="you@example.com" required></div>
+      <div class="sf-group"><label for="mv-phone">Phone / WhatsApp</label><input id="mv-phone" name="Phone" type="tel" placeholder="+92 300 0000000"></div>
+      <div class="sf-group"><label for="mv-title-piece">Title of Your Piece *</label><input id="mv-title-piece" name="Piece Title" type="text" placeholder="e.g. Pakistan's Urban Governance Crisis" required></div>
+      <div class="sf-group"><label for="mv-type">Format / Type *</label><select id="mv-type" name="Format Type" required><option value="">Select…</option><option>Essay (Written)</option><option>Policy Take (Written)</option><option>Explainer (Written)</option><option>Video Opinion (Google Drive Link)</option><option>Audio Opinion (Google Drive Link)</option><option>Other</option></select></div>
+      <div class="sf-group"><label for="mv-link">Google Drive / Media Link *</label><input id="mv-link" name="Media Link" type="url" placeholder="https://drive.google.com/file/..." required></div>
+      <div class="sf-group"><label for="mv-desc">Brief Description / Summary *</label><textarea id="mv-desc" name="Description" placeholder="In 2–4 sentences, summarise your piece and the argument or perspective you're putting forward…" required></textarea></div>
+      <div class="sf-group"><label for="mv-city">City</label><input id="mv-city" name="City" type="text" placeholder="Karachi"></div>
+      <div class="sf-submit-row"><button type="submit" class="btn btn-accent">Submit Piece <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div>
+      <div class="sf-success" id="modal-voice-success"><strong>Submission received!</strong><span>Our editorial team will review your piece and get back to you within 5–7 days.</span></div>
+    </form>
+  </div>
+</div>
+
+<!-- 3. ACADEMY APPLICATION -->
+<div class="sf-overlay" id="modal-academy" role="dialog" aria-modal="true" aria-labelledby="ma-title">
+  <div class="sf-modal">
+    <button class="sf-modal-close" onclick="closeModal('modal-academy')" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="sf-modal-eyebrow">Safak Academy</div>
+    <h2 id="ma-title">Apply to a<br>Cohort</h2>
+    <p class="sf-modal-sub">8 weeks. Real skills. A serious peer group. Applications are reviewed on a rolling basis — apply early.</p>
+    <form class="sf-form" onsubmit="submitEmailForm(event,'modal-academy','Academy Application')">
+      <div class="sf-row"><div class="sf-group"><label for="ma-fname">First Name *</label><input id="ma-fname" name="First Name" type="text" placeholder="Usman" required></div><div class="sf-group"><label for="ma-lname">Last Name *</label><input id="ma-lname" name="Last Name" type="text" placeholder="Raza" required></div></div>
+      <div class="sf-group"><label for="ma-email">Email Address *</label><input id="ma-email" name="Email" type="email" placeholder="you@example.com" required></div>
+      <div class="sf-group"><label for="ma-phone">Phone / WhatsApp *</label><input id="ma-phone" name="Phone" type="tel" placeholder="+92 300 0000000" required></div>
+      <div class="sf-row"><div class="sf-group"><label for="ma-city">City *</label><input id="ma-city" name="City" type="text" placeholder="Islamabad" required></div><div class="sf-group"><label for="ma-age">Age</label><input id="ma-age" name="Age" type="number" min="16" max="35" placeholder="22"></div></div>
+      <div class="sf-group"><label for="ma-univ">University / Institution *</label><input id="ma-univ" name="University" type="text" placeholder="Quaid-i-Azam University" required></div>
+      <div class="sf-group"><label for="ma-track">Preferred Track *</label><select id="ma-track" name="Preferred Track" required><option value="">Select a track…</option><option>Civic Writing</option><option>Research &amp; Fact-Checking</option><option>Policy Analysis</option><option>Public Speaking</option><option>Digital Communication</option><option>Civic Leadership</option><option>No preference / Open to any</option></select></div>
+      <div class="sf-group"><label for="ma-why">Why do you want to join the Academy? *</label><textarea id="ma-why" name="Motivation" placeholder="In 3–5 sentences — what do you want to develop, and why is this the right time?" required></textarea></div>
+      <div class="sf-submit-row"><button type="submit" class="btn btn-accent">Apply to Academy <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div>
+      <div class="sf-success" id="modal-academy-success"><strong>Application submitted via WhatsApp ✓</strong><span>Complete the send in WhatsApp. We review on a rolling basis and will be in touch within 7 days.</span></div>
+    </form>
+  </div>
+</div>
+
+<!-- 4. VOLUNTEER -->
+<div class="sf-overlay" id="modal-volunteer" role="dialog" aria-modal="true" aria-labelledby="mvol-title">
+  <div class="sf-modal">
+    <button class="sf-modal-close" onclick="closeModal('modal-volunteer')" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="sf-modal-eyebrow">Volunteer with Safak</div>
+    <h2 id="mvol-title">Join the<br>Volunteer Team</h2>
+    <p class="sf-modal-sub">Help with editorial review, event coordination, outreach, or research. No experience required — just purpose and commitment.</p>
+    <form class="sf-form" onsubmit="submitEmailForm(event,'modal-volunteer','Volunteer Application')">
+      <div class="sf-row"><div class="sf-group"><label for="mvol-fname">First Name *</label><input id="mvol-fname" name="First Name" type="text" placeholder="Sara" required></div><div class="sf-group"><label for="mvol-lname">Last Name *</label><input id="mvol-lname" name="Last Name" type="text" placeholder="Niazi" required></div></div>
+      <div class="sf-group"><label for="mvol-email">Email Address *</label><input id="mvol-email" name="Email" type="email" placeholder="you@example.com" required></div>
+      <div class="sf-group"><label for="mvol-phone">Phone / WhatsApp *</label><input id="mvol-phone" name="Phone" type="tel" placeholder="+92 300 0000000" required></div>
+      <div class="sf-group"><label for="mvol-area">Area of Interest *</label><select id="mvol-area" name="Volunteer Area" required><option value="">Select…</option><option>Editorial Review &amp; Fact-Checking</option><option>Event Support &amp; Coordination</option><option>Social Media &amp; Digital</option><option>Research Assistance</option><option>Campus Outreach</option><option>Open to Whatever's Needed</option></select></div>
+      <div class="sf-group"><label for="mvol-why">Why do you want to volunteer? *</label><textarea id="mvol-why" name="Motivation" placeholder="In 2–3 sentences — what draws you to Safak, and what do you bring?" required></textarea></div>
+      <div class="sf-submit-row"><button type="submit" class="btn btn-accent">Submit Application <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div>
+      <div class="sf-success" id="modal-volunteer-success"><strong>Application received!</strong><span>We'll review your application and be in touch within a week. Thank you for wanting to contribute.</span></div>
+    </form>
+  </div>
+</div>
+
+<!-- 5. AMBASSADOR -->
+<div class="sf-overlay" id="modal-ambassador" role="dialog" aria-modal="true" aria-labelledby="mamb-title">
+  <div class="sf-modal">
+    <button class="sf-modal-close" onclick="closeModal('modal-ambassador')" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="sf-modal-eyebrow">Campus Ambassador Program</div>
+    <h2 id="mamb-title">Apply as<br>Campus Ambassador</h2>
+    <p class="sf-modal-sub">Represent Safak at your university. Build civic culture on campus and connect peers to a serious platform.</p>
+    <form class="sf-form" onsubmit="submitEmailForm(event,'modal-ambassador','Campus Ambassador Application')">
+      <div class="sf-row"><div class="sf-group"><label for="mamb-fname">First Name *</label><input id="mamb-fname" name="First Name" type="text" placeholder="Zara" required></div><div class="sf-group"><label for="mamb-lname">Last Name *</label><input id="mamb-lname" name="Last Name" type="text" placeholder="Malik" required></div></div>
+      <div class="sf-group"><label for="mamb-email">Email Address *</label><input id="mamb-email" name="Email" type="email" placeholder="you@example.com" required></div>
+      <div class="sf-group"><label for="mamb-phone">Phone / WhatsApp *</label><input id="mamb-phone" name="Phone" type="tel" placeholder="+92 300 0000000" required></div>
+      <div class="sf-group"><label for="mamb-univ">University *</label><input id="mamb-univ" name="University" type="text" placeholder="LUMS, Lahore" required></div>
+      <div class="sf-group"><label for="mamb-year">Year of Study *</label><input id="mamb-year" name="Year of Study" type="text" placeholder="3rd Year, BSc Economics" required></div>
+      <div class="sf-group"><label for="mamb-why">Why do you want to be a Safak ambassador? *</label><textarea id="mamb-why" name="Motivation" placeholder="What would you build on your campus, and why does Safak matter to you?" required></textarea></div>
+      <div class="sf-submit-row"><button type="submit" class="btn btn-accent">Apply Now <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div>
+      <div class="sf-success" id="modal-ambassador-success"><strong>Application submitted ✓</strong><span>We'll review and be in touch within 7 days.</span></div>
+    </form>
+  </div>
+</div>
+
+<!-- 6. PARTNERSHIP -->
+<div class="sf-overlay" id="modal-partnership" role="dialog" aria-modal="true" aria-labelledby="mpart-title">
+  <div class="sf-modal">
+    <button class="sf-modal-close" onclick="closeModal('modal-partnership')" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="sf-modal-eyebrow">Institutional Partnership</div>
+    <h2 id="mpart-title">Partner with<br>Safak Pakistan</h2>
+    <p class="sf-modal-sub">We welcome serious, aligned collaborations with universities, civil society organisations, and institutions. Tell us about your organisation and what you have in mind.</p>
+    <form class="sf-form" onsubmit="submitEmailForm(event,'modal-partnership','Partnership Inquiry')">
+      <div class="sf-row"><div class="sf-group"><label for="mpart-fname">Your Name *</label><input id="mpart-fname" name="Name" type="text" placeholder="Dr. Ahmed Khan" required></div><div class="sf-group"><label for="mpart-role">Your Role *</label><input id="mpart-role" name="Role" type="text" placeholder="Director of Programs" required></div></div>
+      <div class="sf-group"><label for="mpart-org">Organisation *</label><input id="mpart-org" name="Organisation" type="text" placeholder="LUMS Institute of Policy Studies" required></div>
+      <div class="sf-group"><label for="mpart-email">Email Address *</label><input id="mpart-email" name="Email" type="email" placeholder="you@organisation.org" required></div>
+      <div class="sf-group"><label for="mpart-type">Type of Partnership *</label><select id="mpart-type" name="Partnership Type" required><option value="">Select…</option><option>Co-host an Event</option><option>Co-deliver a Program</option><option>Academic Collaboration</option><option>Media Partnership</option><option>Funding / Support</option><option>Other</option></select></div>
+      <div class="sf-group"><label for="mpart-desc">What do you have in mind? *</label><textarea id="mpart-desc" name="Partnership Description" placeholder="Describe what you're proposing and how it aligns with Safak's mission…" required></textarea></div>
+      <div class="sf-submit-row"><button type="submit" class="btn btn-accent">Send Inquiry <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div>
+      <div class="sf-success" id="modal-partnership-success"><strong>Inquiry received ✓</strong><span>We'll review and respond within 5 business days.</span></div>
+    </form>
+  </div>
+</div>
+
+<!-- 7. EVENT REGISTRATION 1 -->
+<div class="sf-overlay" id="modal-event1" role="dialog" aria-modal="true" aria-labelledby="me1-title">
+  <div class="sf-modal">
+    <button class="sf-modal-close" onclick="closeModal('modal-event1')" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="sf-modal-eyebrow">Event Registration · Safak Forum</div>
+    <h2 id="me1-title">Register for<br>Pakistan's Energy Crisis Panel</h2>
+    <p class="sf-modal-sub">June 14, 2026 — Lahore. Register your interest and we'll send full venue and scheduling details as the date approaches.</p>
+    <form class="sf-form" onsubmit="submitEmailForm(event,'modal-event1','Event Registration — Energy Crisis Panel')">
+      <div class="sf-row"><div class="sf-group"><label for="me1-fname">First Name *</label><input id="me1-fname" name="First Name" type="text" placeholder="Ali" required></div><div class="sf-group"><label for="me1-lname">Last Name *</label><input id="me1-lname" name="Last Name" type="text" placeholder="Hassan" required></div></div>
+      <div class="sf-group"><label for="me1-email">Email Address *</label><input id="me1-email" name="Email" type="email" placeholder="you@example.com" required></div>
+      <div class="sf-group"><label for="me1-phone">Phone / WhatsApp</label><input id="me1-phone" name="Phone" type="tel" placeholder="+92 300 0000000"></div>
+      <div class="sf-group"><label for="me1-affil">Organisation / University</label><input id="me1-affil" name="Affiliation" type="text" placeholder="LUMS / Independent Researcher"></div>
+      <div class="sf-submit-row"><button type="submit" class="btn btn-accent">Register Interest <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div>
+      <div class="sf-success" id="modal-event1-success"><strong>Interest registered!</strong><span>We'll send full details (venue, schedule, confirmed speakers) to your email as the date approaches.</span></div>
+    </form>
+  </div>
+</div>
+
+<!-- 8. EVENT REGISTRATION 2 -->
+<div class="sf-overlay" id="modal-event2" role="dialog" aria-modal="true" aria-labelledby="me2-title">
+  <div class="sf-modal">
+    <button class="sf-modal-close" onclick="closeModal('modal-event2')" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="sf-modal-eyebrow">Event Registration · Safak Forum</div>
+    <h2 id="me2-title">Register for<br>Youth in Local Government Roundtable</h2>
+    <p class="sf-modal-sub">July 5, 2026 — Virtual. Register your interest for this moderated online roundtable on youth participation in local government.</p>
+    <form class="sf-form" onsubmit="submitEmailForm(event,'modal-event2','Event Registration — Youth Local Govt Roundtable')">
+      <div class="sf-row"><div class="sf-group"><label for="me2-fname">First Name *</label><input id="me2-fname" name="First Name" type="text" placeholder="Fatima" required></div><div class="sf-group"><label for="me2-lname">Last Name *</label><input id="me2-lname" name="Last Name" type="text" placeholder="Khan" required></div></div>
+      <div class="sf-group"><label for="me2-email">Email Address *</label><input id="me2-email" name="Email" type="email" placeholder="you@example.com" required></div>
+      <div class="sf-group"><label for="me2-phone">Phone / WhatsApp</label><input id="me2-phone" name="Phone" type="tel" placeholder="+92 300 0000000"></div>
+      <div class="sf-group"><label for="me2-city">City</label><input id="me2-city" name="City" type="text" placeholder="Karachi"></div>
+      <div class="sf-submit-row"><button type="submit" class="btn btn-accent">Register Interest <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div>
+      <div class="sf-success" id="modal-event2-success"><strong>Interest registered!</strong><span>We'll send the virtual meeting link and full details to your email before the event.</span></div>
+    </form>
+  </div>
+</div>
+
+<!-- 9. EVENT REGISTRATION 3 -->
+<div class="sf-overlay" id="modal-event3" role="dialog" aria-modal="true" aria-labelledby="me3-title">
+  <div class="sf-modal">
+    <button class="sf-modal-close" onclick="closeModal('modal-event3')" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="sf-modal-eyebrow">Event Registration · Safak Forum</div>
+    <h2 id="me3-title">Register for<br>The State of Pakistani Institutions Forum</h2>
+    <p class="sf-modal-sub">August 2026 — Karachi. Safak's flagship annual public forum. Register your interest for this full-day event.</p>
+    <form class="sf-form" onsubmit="submitEmailForm(event,'modal-event3','Event Registration — State of Institutions Forum')">
+      <div class="sf-row"><div class="sf-group"><label for="me3-fname">First Name *</label><input id="me3-fname" name="First Name" type="text" placeholder="Omar" required></div><div class="sf-group"><label for="me3-lname">Last Name *</label><input id="me3-lname" name="Last Name" type="text" placeholder="Butt" required></div></div>
+      <div class="sf-group"><label for="me3-email">Email Address *</label><input id="me3-email" name="Email" type="email" placeholder="you@example.com" required></div>
+      <div class="sf-group"><label for="me3-phone">Phone / WhatsApp</label><input id="me3-phone" name="Phone" type="tel" placeholder="+92 300 0000000"></div>
+      <div class="sf-group"><label for="me3-affil">Organisation / University</label><input id="me3-affil" name="Affiliation" type="text" placeholder="IBA Karachi / Civil Society"></div>
+      <div class="sf-group"><label for="me3-session">Session Interest</label><select id="me3-session" name="Session Interest"><option value="">Select…</option><option>Morning Panels</option><option>Afternoon Workshops</option><option>Evening Dialogue</option><option>Full Day</option></select></div>
+      <div class="sf-submit-row"><button type="submit" class="btn btn-accent">Register Interest <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div>
+      <div class="sf-success" id="modal-event3-success"><strong>Interest registered!</strong><span>We'll send full details (venue, schedule, confirmed speakers) to your email as the date approaches.</span></div>
+    </form>
+  </div>
+</div>
+
+<!-- 10. CAREERS: ROLE-SPECIFIC -->
+<div class="sf-overlay" id="modal-careers-role" role="dialog" aria-modal="true" aria-labelledby="mcr-title">
+  <div class="sf-modal">
+    <button class="sf-modal-close" onclick="closeModal('modal-careers-role')" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="sf-modal-eyebrow">Founding Team Application · Safak Pakistan</div>
+    <h2 id="mcr-title">Apply for<br><span id="mcr-role-display" style="color:var(--accent)">This Role</span></h2>
+    <p class="sf-modal-sub">Applying as a founding team member. No CV required — we want to understand how you think. Submitting will open WhatsApp with your details pre-filled.</p>
+    <form class="sf-form" onsubmit="submitEmailForm(event,'modal-careers-role','Founding Team Application')">
+      <input type="hidden" id="mcr-role-hidden" name="Role Applied For" value="">
+      <div class="sf-row"><div class="sf-group"><label for="mcr-fname">First Name *</label><input id="mcr-fname" name="First Name" type="text" placeholder="Muhammad" required></div><div class="sf-group"><label for="mcr-lname">Last Name *</label><input id="mcr-lname" name="Last Name" type="text" placeholder="Ali" required></div></div>
+      <div class="sf-group"><label for="mcr-email">Email Address *</label><input id="mcr-email" name="Email" type="email" placeholder="you@example.com" required></div>
+      <div class="sf-group"><label for="mcr-phone">Phone / WhatsApp *</label><input id="mcr-phone" name="Phone" type="tel" placeholder="+92 300 0000000" required></div>
+      <div class="sf-row"><div class="sf-group"><label for="mcr-city">City *</label><input id="mcr-city" name="City" type="text" placeholder="Lahore" required></div><div class="sf-group"><label for="mcr-age">Age *</label><input id="mcr-age" name="Age" type="number" min="17" max="35" placeholder="24" required></div></div>
+      <div class="sf-group"><label for="mcr-linkedin">LinkedIn / Portfolio URL</label><input id="mcr-linkedin" name="LinkedIn/Portfolio" type="url" placeholder="https://linkedin.com/in/yourname"></div>
+      <div class="sf-group"><label for="mcr-why">Why Safak? Why this role? *</label><textarea id="mcr-why" name="Why Safak & Role" placeholder="In 3–5 sentences — what draws you to Safak, and why are you the right person for this specific role?" required></textarea></div>
+      <div class="sf-group"><label for="mcr-built">What have you built or done that's most relevant? *</label><textarea id="mcr-built" name="Relevant Experience" placeholder="Tell us about the work, project, or achievement that best demonstrates your capability for this role…" required></textarea></div>
+      <div class="sf-group"><label for="mcr-founder">What does 'founding member' mean to you?</label><textarea id="mcr-founder" name="Founding Member View" placeholder="Optional — but we're genuinely curious how you think about ownership, responsibility, and risk…" style="min-height:80px"></textarea></div>
+      <div class="sf-submit-row"><button type="submit" class="btn btn-accent">Submit Application <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div>
+      <div class="sf-success" id="modal-careers-role-success"><strong>Application submitted via WhatsApp ✓</strong><span>Complete the send in WhatsApp. The founders personally review every application and will respond within 5–7 days. No ghosting — we respect your time.</span></div>
+    </form>
+  </div>
+</div>
+
+<!-- 11. CAREERS: GENERAL INTEREST -->
+<div class="sf-overlay" id="modal-careers-general" role="dialog" aria-modal="true" aria-labelledby="mcg-title">
+  <div class="sf-modal">
+    <button class="sf-modal-close" onclick="closeModal('modal-careers-general')" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="sf-modal-eyebrow">Founding Team · Express Interest</div>
+    <h2 id="mcg-title">Join the<br>Founding Team</h2>
+    <p class="sf-modal-sub">Not sure which role fits you best? Express general interest and tell us what you can do. We'll reach out if there's a match.</p>
+    <form class="sf-form" onsubmit="submitEmailForm(event,'modal-careers-general','Founding Team — General Interest')">
+      <div class="sf-row"><div class="sf-group"><label for="mcg-fname">First Name *</label><input id="mcg-fname" name="First Name" type="text" placeholder="Muhammad" required></div><div class="sf-group"><label for="mcg-lname">Last Name *</label><input id="mcg-lname" name="Last Name" type="text" placeholder="Ali" required></div></div>
+      <div class="sf-group"><label for="mcg-email">Email Address *</label><input id="mcg-email" name="Email" type="email" placeholder="you@example.com" required></div>
+      <div class="sf-group"><label for="mcg-phone">Phone / WhatsApp *</label><input id="mcg-phone" name="Phone" type="tel" placeholder="+92 300 0000000" required></div>
+      <div class="sf-group"><label for="mcg-city">City *</label><input id="mcg-city" name="City" type="text" placeholder="Karachi" required></div>
+      <div class="sf-group"><label for="mcg-interest">Which role(s) interest you? *</label><select id="mcg-interest" name="Role Interest" required><option value="">Select…</option><option>Phase Coordinator</option><option>Editor</option><option>AI &amp; Tools Specialist</option><option>Content Director</option><option>Outreach Lead</option><option>Open to any founding role</option></select></div>
+      <div class="sf-group"><label for="mcg-linkedin">LinkedIn / Portfolio URL</label><input id="mcg-linkedin" name="LinkedIn/Portfolio" type="url" placeholder="https://linkedin.com/in/yourname"></div>
+      <div class="sf-group"><label for="mcg-pitch">Tell us what you bring *</label><textarea id="mcg-pitch" name="What You Bring" placeholder="In 3–5 sentences — what's your strongest capability, and why would you be a good founding member of Safak Pakistan?" required></textarea></div>
+      <div class="sf-submit-row"><button type="submit" class="btn btn-accent">Express Interest <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div>
+      <div class="sf-success" id="modal-careers-general-success"><strong>Interest registered via WhatsApp ✓</strong><span>Complete the send in WhatsApp. The founders will review and be in touch if there's a strong match.</span></div>
+    </form>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
